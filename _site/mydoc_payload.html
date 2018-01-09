@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Payload keys mapping | </title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://0.0.0.0:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Transactionale Documentazione integrazione</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Payload keys mapping">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Integration Doc 2.0</li>
+  
+  
+  
+  <li>
+      <a href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a href="index.html">Panoramica</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Come implementare</a>
+      <ul>
+          
+          
+          
+          <li><a href="mydoc_snippet.html">Snippet</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Dove inserire lo snippet</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="mydoc_snippet_homepage.html">Home Page</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="mydoc_snippet_pagina_ricerca.html">Pagina risultati di ricerca</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="mydoc_snippet_pagina_prodotto.html">Pagina prodotto</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="mydoc_snippet_carrello.html">Carrello</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="mydoc_snippet_pagina_conferma.html">Pagina di conferma</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mydoc_events.html">Events</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mydoc_custom_events.html">Custom events</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mydoc_entities.html">Entities</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="mydoc_webhook.html">Webhook</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Payload keys mapping</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+
+    
+
+  <h2 id="overwiev">Overwiev</h2>
+
+<h3 id="payload-keys-mapping">Payload keys mapping</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">payloadKeysMapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">version</span><span class="p">:</span> <span class="s1">'vv'</span><span class="p">,</span>
+    <span class="na">email</span><span class="p">:</span> <span class="s1">'ue'</span><span class="p">,</span>
+    <span class="na">event</span><span class="p">:</span> <span class="s1">'ev'</span><span class="p">,</span>
+    <span class="na">customEventName</span><span class="p">:</span> <span class="s1">'en'</span><span class="p">,</span>
+    <span class="na">touchpointId</span><span class="p">:</span> <span class="s1">'ut'</span><span class="p">,</span>
+    <span class="na">touchpointType</span><span class="p">:</span> <span class="s1">'uy'</span><span class="p">,</span>
+    <span class="na">isTransaConversion</span><span class="p">:</span> <span class="s1">'ec'</span><span class="p">,</span>
+    <span class="na">user</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'res'</span><span class="p">:</span> <span class="s1">'ur'</span><span class="p">,</span>
+        <span class="s1">'ua'</span><span class="p">:</span> <span class="s1">'ua'</span><span class="p">,</span>
+        <span class="s1">'lang'</span><span class="p">:</span> <span class="s1">'ul'</span>
+    <span class="p">},</span>
+    <span class="na">page</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'href'</span><span class="p">:</span> <span class="s1">'ph'</span><span class="p">,</span>
+        <span class="s1">'lang'</span><span class="p">:</span> <span class="s1">'pl'</span><span class="p">,</span>
+        <span class="s1">'title'</span><span class="p">:</span> <span class="s1">'pt'</span><span class="p">,</span>
+        <span class="s1">'charset'</span><span class="p">:</span> <span class="s1">'pc'</span><span class="p">,</span>
+        <span class="s1">'keywords'</span><span class="p">:</span> <span class="s1">'pk'</span><span class="p">,</span>
+        <span class="s1">'description'</span><span class="p">:</span> <span class="s1">'pd'</span>
+    <span class="p">},</span>
+    <span class="na">transaction</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'id'</span><span class="p">:</span> <span class="s1">'ti'</span><span class="p">,</span>
+        <span class="s1">'subtotal'</span><span class="p">:</span> <span class="s1">'ts'</span><span class="p">,</span>
+        <span class="s1">'shipping'</span><span class="p">:</span> <span class="s1">'th'</span><span class="p">,</span>
+        <span class="s1">'discount'</span><span class="p">:</span> <span class="s1">'td'</span><span class="p">,</span>
+        <span class="s1">'coupon'</span><span class="p">:</span> <span class="s1">'tc'</span><span class="p">,</span>
+        <span class="s1">'total'</span><span class="p">:</span> <span class="s1">'tt'</span><span class="p">,</span>
+        <span class="s1">'currency'</span><span class="p">:</span> <span class="s1">'tv'</span>
+    <span class="p">},</span>
+    <span class="na">itemIDs</span><span class="p">:</span> <span class="s1">'ji'</span><span class="p">,</span> <span class="c1">// No sub-fields, so one-level key only</span>
+    <span class="na">items</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'id'</span><span class="p">:</span> <span class="s1">'ii'</span><span class="p">,</span>
+        <span class="s1">'price'</span><span class="p">:</span> <span class="s1">'ip'</span><span class="p">,</span>
+        <span class="s1">'quantity'</span><span class="p">:</span> <span class="s1">'iq'</span><span class="p">,</span>
+        <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'in'</span><span class="p">,</span>
+        <span class="s1">'categoryId'</span><span class="p">:</span> <span class="s1">'ic'</span><span class="p">,</span>
+        <span class="s1">'categoryName'</span><span class="p">:</span> <span class="s1">'id'</span><span class="p">,</span>
+        <span class="s1">'barcode'</span><span class="p">:</span> <span class="s1">'ib'</span> <span class="c1">// EAN or UPC</span>
+    <span class="p">},</span>
+    <span class="na">address</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'firstName'</span><span class="p">:</span> <span class="s1">'af'</span><span class="p">,</span>
+        <span class="s1">'lastName'</span><span class="p">:</span> <span class="s1">'al'</span><span class="p">,</span>
+        <span class="s1">'company'</span><span class="p">:</span> <span class="s1">'ac'</span><span class="p">,</span>
+        <span class="s1">'address'</span><span class="p">:</span> <span class="s1">'aa'</span><span class="p">,</span>
+        <span class="s1">'address2'</span><span class="p">:</span> <span class="s1">'ab'</span><span class="p">,</span>
+        <span class="s1">'city'</span><span class="p">:</span> <span class="s1">'at'</span><span class="p">,</span>
+        <span class="s1">'postalCode'</span><span class="p">:</span> <span class="s1">'az'</span><span class="p">,</span>
+        <span class="s1">'country'</span><span class="p">:</span> <span class="s1">'an'</span><span class="p">,</span>
+        <span class="s1">'phone'</span><span class="p">:</span> <span class="s1">'ap'</span><span class="p">,</span>
+        <span class="s1">'phoneMobile'</span><span class="p">:</span> <span class="s1">'am'</span>
+    <span class="p">},</span>
+    <span class="na">customer</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'firstName'</span><span class="p">:</span> <span class="s1">'cf'</span><span class="p">,</span>
+        <span class="s1">'lastName'</span><span class="p">:</span> <span class="s1">'cl'</span><span class="p">,</span>
+        <span class="s1">'company'</span><span class="p">:</span> <span class="s1">'cc'</span><span class="p">,</span>
+        <span class="s1">'birthdate'</span><span class="p">:</span> <span class="s1">'cb'</span><span class="p">,</span>
+        <span class="s1">'gender'</span><span class="p">:</span> <span class="s1">'cg'</span><span class="p">,</span>
+        <span class="s1">'optin'</span><span class="p">:</span> <span class="s1">'co'</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2018 2015- Transactionale - FlyerTech s.r.l. All rights reserved. <br />
+ Site last generated: Jan 9, 2018 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>

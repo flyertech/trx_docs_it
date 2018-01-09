@@ -1,0 +1,68 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Integration Doc
+  version: 2.0
+  folders:
+
+  - title: Panoramica
+    output: web, pdf
+    folderitems:
+
+    - title: Panoramica
+      url: /index.html
+      output: web, pdf
+
+  - title: Come implementare
+    output: web, pdf
+    folderitems:
+
+    - title: Snippet
+      url: /mydoc_snippet.html
+      output: web, pdf
+
+      subfolders:
+      - title: Dove inserire lo snippet
+        output: web, pdf
+        subfolderitems:
+
+        - title: Home Page
+          url: /mydoc_snippet_homepage.html
+          output: web, pdf
+
+        - title: Pagina risultati di ricerca
+          url: /mydoc_snippet_pagina_ricerca.html
+          output: web, pdf
+        
+        - title: Pagina prodotto
+          url: /mydoc_snippet_pagina_prodotto.html
+          output: web, pdf
+        
+        - title: Carrello
+          url: /mydoc_snippet_carrello.html
+          output: web, pdf
+        
+        - title: Pagina di conferma
+          url: /mydoc_snippet_pagina_conferma.html
+          output: web, pdf
+    
+    - title: Eventi
+      url: /mydoc_events.html
+      output: web, pdf
+    
+    - title: Eventi personalizzati
+      url: /mydoc_custom_events.html
+      output: web, pdf
+
+    - title: Entità
+      url: /mydoc_entities.html
+      output: web, pdf
+    
+    - title: Webhook
+      url: /mydoc_webhook.html
+      output: web, pdf
+
+    
+
+  

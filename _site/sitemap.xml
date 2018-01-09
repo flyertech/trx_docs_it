@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+
+
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_cookies.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_custom_events.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_default_settings.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_entities.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_events.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_payload.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_snippet.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_snippet_carrello.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_snippet_homepage.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_snippet_pagina_conferma.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_snippet_pagina_prodotto.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_snippet_pagina_ricerca.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/mydoc_webhook.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://0.0.0.0:4000/assets/css/style.css</loc>
+  </url>
+  
+  
+</urlset>
