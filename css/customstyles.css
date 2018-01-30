@@ -1,13 +1,14 @@
 body {
-    font-size:15px;
+    font-size:18px;
 }
 
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
     border-left-width: 5px;
     border-radius: 3px;
+    background-color: #f9f9f9;
 }
 .bs-callout h4 {
     margin-top: 0;

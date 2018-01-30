@@ -7,7 +7,7 @@ summary: Dettagli integrazione v2
 
 ---
 
-Questa è la **knowledge base tecnica di Transactionale**, dove potrai trovare tutti i [dettagli e le spiegazioni tecniche](mydoc_snippet.html) per integrare il tuo e-Shop con Transactionale.
+Questa è la **knowledge base tecnica di Transactionale**, dove potrai trovare tutti i dettagli e le spiegazioni tecniche per integrare il tuo e-Shop con Transactionale.
 
 ## Advertiser {#advertiser}
 Con **Transactionale** potrai coinvolgere nuovi clienti nel tuo e-Shop e tracciare le loro conversioni.
@@ -15,10 +15,10 @@ Con **Transactionale** potrai coinvolgere nuovi clienti nel tuo e-Shop e traccia
 ### Come coinvolgo nuovi clienti
 Potrai in pochi passi creare una **campagna di advertising** e noi **la distribuiremo sul network**. I clienti di altri shop riceveranno le tue offerte, e le reclameranno sul tuo sito. Questo ti permetterà di acquisire **lead** qualificati che hanno un tasso di conversione più alto rispetto ad altri metodi di acquisizione clienti.
 
-Se scegli anche di essere un [publisher](#publisher) , puoi anche **guadagnare** e, se vuoi, reinvestire il guadagno nella tua campagna riducendo ulteriormente i costi di acquisizione.
+Se scegli anche di essere un [publisher](#publisher), puoi anche **guadagnare** e, se vuoi, reinvestire il guadagno nella tua campagna riducendo ulteriormente i costi di acquisizione.
 
 ### Come funziona
-Se il tuo shop è basato su **WooCommerce** o **PrestaShop** possiamo fornirti plug-in di integrazione già pronti, che potrai installare senza sforzo e che potranno essere completamente configurati dal tuo backend, senza praticamente nessun intervento tecnico.
+{% include callout.html content="Se il tuo shop è basato su **WooCommerce** o **PrestaShop** possiamo fornirti plug-in di integrazione già pronti, che potrai installare senza sforzo e che potranno essere completamente configurati dal tuo backend, senza praticamente nessun intervento tecnico." %}
 
 In tutti gli altri casi, basta semplicemente includere uno **snippet di codice JavaScript (lato client)** su **tutte le pagine** del tuo sito web, come spiegato più avanti.
 
