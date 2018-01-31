@@ -1,7 +1,7 @@
 ---
 title: Snippet nella pagina carrello
 sidebar: mydoc_sidebar
-permalink: mydoc_snippet_carrello.html
+permalink: snippet_carrello.html
 folder: mydoc
 ---
 
@@ -18,14 +18,15 @@ In questo caso i prodotti (items) possono essere forniti solo come oggetti, poic
 _trx.push({
     event: 'viewBasket',
     items: [{
-        id: 'ABC123', // REQUIRED
-        quantity: 1, // REQUIRED
-        price: '123.23', // Strings are preferred
+        id: 'ABC123', // OBBLIGATORIO
+        quantity: 1, // OBBLIGATORIO
+        price: '123.23', // Il formato stringa è preferibile
         name: 'Example',
-        categoryId: 123,
-        categoryName: 'Custom or Google category name'
+        categoryId: 123, // Google category ID
+        categoryName: 'Nome categoria custom o nome categoria Google'
     }]
 });
 ```
 
-[Google merchant categories](https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
+[Google merchant categories (versione ITA)](https://www.google.com/basepages/producttype/taxonomy-with-ids.it-IT.txt)
+[Google merchant categories (versione USA)](https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)

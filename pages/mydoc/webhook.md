@@ -1,7 +1,7 @@
 ---
 title: Webhook / lead tracking
 sidebar: mydoc_sidebar
-permalink: mydoc_webhook.html
+permalink: webhook.html
 folder: mydoc
 ---
 
@@ -43,7 +43,12 @@ Ad esempio:
 ```
 ad_id=72&email=test%40transactionale.com&coupon_code=TRCOUPON&first_name=Marianna&zip_code=12345
 ```
+
+{% include callout.html content="<strong>Nota</strong>: dato che i lead provengono dalle aziende che, in Transactionale, svolgono il ruolo di publisher, quali dati sono effettivamente disponibili nella chiamata dipende da cosa il publisher riesce ad inviare. Riusciamo a garantire l’invio assolutamente certo di ad_id e email; riguardo i dati restanti, considerare sempre la possibilità che non siano sempre presenti." %}
+
+## Gestione degli errori
 Il contenuto della risposta non verrà considerato. I **codici di risposta >= 300** saranno considerati come errori, quindi il sistema potrebbe ritentare l’invio della richiesta.
+
+## Deduplica
 Il **codice di risposta 400** indica che l'indirizzo email è già esistente e quindi non vi sarà la generazione del lead.
 
-Nota: dato che i lead provengono dalle aziende che, in Transactionale, svolgono il ruolo di publisher, quali dati sono effettivamente disponibili nella chiamata dipende da cosa il publisher riesce ad inviare. Riusciamo a garantire l’invio assolutamente certo di ad_id e email; riguardo i dati restanti, considerare sempre la possibilità che non siano sempre presenti.

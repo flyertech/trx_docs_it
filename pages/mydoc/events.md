@@ -1,7 +1,7 @@
 ---
-title: Events
+title: Documentazione eventi
 sidebar: mydoc_sidebar
-permalink: mydoc_events.html
+permalink: events.html
 folder: mydoc
 ---
 
@@ -60,11 +60,11 @@ _trx.push({
 _trx.push({
   event: 'viewItem',
   item: {
-    id: 1, 
-    price: 12.34, 
+    id: 'ABC123', 
+    price: '12.34', 
     name: 'Pizza', 
     categoryId: 123, // Google merchant center category ID 
-    categoryName: 'Bontà', // Custom or Google category name
+    categoryName: 'My Category', // Custom or Google category name
     barcode: '0000123456789'
   }
 });
@@ -117,51 +117,9 @@ _trx.push({
 ```
 
 ### trackTransaction
-Tiene traccia di una trasazione completa (ordine, booking etc.). Ciò consentirà il tracciamento delle conversioni oltre ad intercettare la consegna delle offerte attraverso uno dei touchpoints disponibili: web, mail o bulk.  Per i touchpoint Web è possibile impostare touchpointType: "web" e chiamerà implicitamente triggerWebTouchpoint.
+Tiene traccia di una transazione completa (ordine, booking etc.). Ciò consentirà il tracciamento delle conversioni oltre ad intercettare la consegna delle offerte attraverso uno dei touchpoints disponibili: web, mail o bulk.  Per i touchpoint Web è possibile impostare touchpointType: "web" e chiamerà implicitamente triggerWebTouchpoint.
 
-```js
-window._trx.push(
-    {
-        event: 'trackTransaction',
-        transaction: {
-            id: 'ABC123', // Order number
-            subtotal: 1,
-            shipping: 1,
-            discount: 0.5,
-            total: 1.5, // Required
-            coupon: 'CPN', 
-            currency: 'EUR', // EUR by default
-        },
-        items: [
-            {id: 1, price: 12.34, quantity: 1}, // Same format as viewBasket
-            {id: 2, price: 23.45, quantity: 2},
-        ],
-        address: {
-            address: 'test',
-            address2: 'test',
-            city: 'Test',
-            postalCode: '70121',
-            country: 'IT',
-            phone: '123456789',
-            phoneMobile: '123456789',
-        },
-        customer: {
-            firstName: 'Ugo',
-            lastName: 'Fantozzi',
-            company: 'Megaditta',
-            email: 'ugo@fantozzo.it',
-            birthdate: '1983-03-06', // YYYY-MM-DD or YYYY only
-            gender: 'm',
-            optin: true // Default to true
-        },
-        // Example with web touchpoint usage
-        touchpointType: 'web',
-        touchpointId: '123' // REQUIRED or set before with a setTouchpointId event
-        containerId: 'test' // OPTIONAL
-    }
-);
-
-```
+{% include_relative snippets/tracktransaction.md %}
 
 ### flush
 Serve per attivare manualmente l'invio di dati al server di tracciamento.
@@ -178,7 +136,8 @@ window._trx.push({ event: 'trackTransaction', touchpointId: 1 });
 ```
 
 ### triggerWebTouchpoint
-Attiva la visualizzazione delle offerte (inline in the base??). Richiede un div sulla pagina con id "tr_touchpoint_container". L'ID può essere personalizzato passando un argomento containerId con l'evento.
+Attiva la visualizzazione delle offerte all'interno della pagina web. Richiede un `<div>` sulla pagina con id "tr_touchpoint_container". L'ID può essere personalizzato passando un argomento containerId nell'evento.
+
 ```js
 window._trx.push(
     { event: 'setAccount', account: '123', country: 'IT'},
@@ -191,23 +150,31 @@ window._trx.push(
 );
 ```
 
-### viewPage
-Traccia una generica pagina. Ad esempio vuoi generare un nuovo lead quando un utente vede la pagina www.yoursite.com/success .
+### triggerMailTouchpoint
+Richiede l'invio di una mail promozionale verso l'utente fornito senza legarla ad una transazione.
 
-```html
-<!-- www.yoursite.com/success -->
-...
-<body>
-    <h1>Success!</h1>
-</body>
-
-<script>
-window._trx.push(
-    { event: 'setAccount', account: '123', country: 'IT'},
-    { event: 'pageView'},
-);
-</script>
+```js
+    window._trx.push(
+      { event: 'setAccount', account: '123', country: 'IT'},
+      { 
+        event: 'triggerMailTouchpoint',
+        touchpointId: 1, // set here or before with a setTouchpointId event
+        customer: {
+            firstName: 'Nome',
+            lastName: 'Cognome',
+            company: 'Ragione sociale',
+            email: 'email@address.com',
+            birthdate: '1900-01-01', // YYYY-MM-DD or YYYY only
+            gender: 'm', // m o f
+            optin: true // Default: true - se l'utente ha dato il consenso per ricevere comunicazioni commerciali da terzi
+        },
+      }
+    );
 ```
+
+### viewPage
+Traccia una visita ad una pagina generica. Ad esempio vuoi generare un nuovo lead quando un utente vede la pagina www.yoursite.com/success.
+{% include_relative snippets/viewpage.md %}
 
 Nel settings della campagna inserirai www.yoursite.com/success come url finale del funnel.
 

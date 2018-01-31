@@ -14,53 +14,58 @@ entries:
       url: /index.html
       output: web, pdf
 
-  - title: Come implementare
+  - title: Istruzioni tecniche
     output: web, pdf
     folderitems:
 
-    - title: Snippet
-      url: /mydoc_snippet.html
+    - title: Integrazione completa
+      url: /full_integration.html
       output: web, pdf
 
+    - title: Integrazione semplificata
+      url: /simplified_integration.html
+      output: web, pdf
+
+    - title: 
       subfolders:
       - title: Dove inserire lo snippet
         output: web, pdf
         subfolderitems:
 
         - title: Home Page
-          url: /mydoc_snippet_homepage.html
+          url: /snippet_homepage.html
           output: web, pdf
 
         - title: Pagina risultati di ricerca
-          url: /mydoc_snippet_pagina_ricerca.html
+          url: /snippet_pagina_ricerca.html
           output: web, pdf
         
         - title: Pagina prodotto
-          url: /mydoc_snippet_pagina_prodotto.html
+          url: /snippet_pagina_prodotto.html
           output: web, pdf
         
         - title: Carrello
-          url: /mydoc_snippet_carrello.html
+          url: /snippet_carrello.html
           output: web, pdf
         
         - title: Pagina di conferma
-          url: /mydoc_snippet_pagina_conferma.html
+          url: /snippet_pagina_conferma.html
           output: web, pdf
     
-    - title: Eventi
-      url: /mydoc_events.html
+    - title: Documentazione Eventi
+      url: /events.html
       output: web, pdf
     
     - title: Eventi personalizzati
-      url: /mydoc_custom_events.html
+      url: /custom_events.html
       output: web, pdf
 
     - title: Entità
-      url: /mydoc_entities.html
+      url: /entities.html
       output: web, pdf
     
     - title: Webhook
-      url: /mydoc_webhook.html
+      url: /webhook.html
       output: web, pdf
 
     

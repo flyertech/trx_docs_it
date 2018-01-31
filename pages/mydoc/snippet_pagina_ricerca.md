@@ -1,7 +1,7 @@
 ---
 title: Snippet nella pagina di Risultati della ricerca/Catalogo
 sidebar: mydoc_sidebar
-permalink: mydoc_snippet_pagina_ricerca.html
+permalink: snippet_pagina_ricerca.html
 folder: mydoc
 ---
 
@@ -10,12 +10,12 @@ Una **pagina risultati della ricerca** mostra più prodotti, può trattarsi di u
 
 Molti utenti si limitano a navigare nelle pagine Categoria e Risultati della ricerca, senza fare clic per andare alle pagine specifiche dei prodotti, e dunque l'implementazione in queste pagine è la chiave per monitorare il comportamento di questi utenti.
 
-Devi implementare lo snippet nell'intestazione di tutte le pagine del sito. Il **tag si carica in modo asincrono**, dunque **non interferirà** con il tempo di caricamento della pagina o con l'esperienza dell'utente.
-
 Gli articoli possono essere forniti in due modi:
 
 - solo id, se la company ha precedentemente fornito un feed del proprio catalogo,
 - un oggetto che descrive tutti i dettagli necessari
+
+{% include_relative partials/laoder_warning.md %}
 
 ## L'evento viewList (Visualizzazione elenco)
 
@@ -33,14 +33,15 @@ _trx.push({
 _trx.push({
   event: 'viewList',
   items: [{
-    id: 1, 
-    price: 12.34, 
-    name: 'Pizza', 
-    categoryId: 123, // Google merchant center category ID 
-    categoryName: 'Bontà' // Custom or Google category name
-  }]
+        id: 'ABC123', 
+        price: '12.34', 
+        name: 'Product name', 
+        categoryId: 123, // Google merchant center category ID 
+        categoryName: 'My Category', // Custom or Google category name
+        barcode: '0000123456789'
+      }]
 });
 ```
 
-
- [Google merchant categories](https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
+[Google merchant categories](https://www.google.com/basepages/producttype/taxonomy-with-ids.it-IT.txt)
+[Google merchant categories](https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
