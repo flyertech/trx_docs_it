@@ -1,7 +1,7 @@
 ```html
 <script>
 window._trx.push(
-    { event: 'viewPage'},
+    { event: 'viewPage'}
 );
 </script>
 ```

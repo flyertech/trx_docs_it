@@ -29,8 +29,8 @@ address: {
     postalCode: '70121',
     country: 'IT',
     phone: '123456789',
-    phoneMobile: '123456789',
-},
+    phoneMobile: '123456789'
+}
 ```
 
 ## Transaction
@@ -43,8 +43,8 @@ transaction: {
     discount: 0.5,
     total: 1.5, // Required
     coupon: 'CPN', 
-    currency: 'EUR', // EUR by default
-},
+    currency: 'EUR' // EUR by default
+}
 ```
 
 ## Item (full version)

@@ -20,8 +20,7 @@ Permette di tracciare una pagina generica da te definita. Ad esempio se vuoi gen
 </body>
 <script>
 window._trx.push(
-    { event: 'setAccount', account: '123', country: 'IT'},
-    { event: 'viewPage'},
+    { event: 'viewPage'}
 );
 </script>
 ```
@@ -33,8 +32,7 @@ Può essere usato per i funnels in Single Page Application o dovunque per tracci
 
 ```js
 window._trx.push(
-    { event: 'setAccount', account: '123', country: 'IT'},
-    { event: 'customEvent', name: 'my-custom-event-name'},
+    { event: 'customEvent', name: 'my-custom-event-name'}
 );
 ```
 Per catturare l'evento devi configurare la campagna inserendo il nome dell'evento nel campo dedicato, dopo aver selezionato *Event* nel campo *Lead funnel type*.

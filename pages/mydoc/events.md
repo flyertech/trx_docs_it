@@ -15,7 +15,7 @@ Contiene le informazioni per l'autenticazione.
 _trx.push({ 
   event: 'setAccount',
   account: 'API_KEY', // REQUIRED
-  country: 'IT', // REQUIRED
+  country: 'IT' // REQUIRED
 });
 
 ```
@@ -62,7 +62,7 @@ _trx.push({
   item: {
     id: 'ABC123', 
     price: '12.34', 
-    name: 'Pizza', 
+    name: 'Example', 
     categoryId: 123, // Google merchant center category ID 
     categoryName: 'My Category', // Custom or Google category name
     barcode: '0000123456789'
@@ -91,9 +91,9 @@ _trx.push({
   items: [{
     id: 1, 
     price: 12.34, 
-    name: 'Pizza', 
+    name: 'Example', 
     categoryId: 123, // Google merchant center category ID 
-    categoryName: 'Bontà' // Custom or Google category name
+    categoryName: 'Custom or Google category name'
   }]
 });
 ```
@@ -123,16 +123,16 @@ Tiene traccia di una transazione completa (ordine, booking etc.). Ciò consentir
 
 ### flush
 Serve per attivare manualmente l'invio di dati al server di tracciamento.
+
 ```js
 window._trx.push({ event: 'flush' });
-
 ```
 
 ### setTouchpointId
 Imposta il touchpoint id desiderato. Utile in caso di account per più siti o per più tipi di touchpoints (transactional, bulk o web).
-```js
-window._trx.push({ event: 'trackTransaction', touchpointId: 1 });
 
+```js
+window._trx.push({ event: 'setTouchpointId', touchpointId: 1 });
 ```
 
 ### triggerWebTouchpoint
@@ -185,9 +185,8 @@ Può essere usato per i funnels in Sigle Page Application o dovunque per traccia
 ```js
     window._trx.push(
       { event: 'setAccount', account: '123', country: 'IT'},
-      { event: 'customEvent', name: 'my-custom-event-name'},
+      { event: 'customEvent', name: 'my-custom-event-name'}
     );
-    
 ```
 Per catturare l'evento devi configurare la campagna inserendo il nome dell'evento nel campo dedicato.
 
