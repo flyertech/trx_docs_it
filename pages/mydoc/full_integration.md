@@ -47,13 +47,16 @@ E' possibile ricevere automaticamente **in tempo reale** i dati dei lead generat
 Trovi tutti i dettagli nella sezione [webhook](webhook.html).
 
 ## Integrazioni opzionali o personalizzate
+TODO
 
 ### Pagina generica
+TODO
 
 ### Evento personalizzato di generazione Lead
+TODO
 
 ### Invio manuale di una mail promozionale
-
+TODO
 
 
 
