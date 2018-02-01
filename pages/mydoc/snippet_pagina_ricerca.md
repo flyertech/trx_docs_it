@@ -15,7 +15,7 @@ Gli articoli possono essere forniti in due modi:
 - solo id, se la company ha precedentemente fornito un feed del proprio catalogo,
 - un oggetto che descrive tutti i dettagli necessari
 
-{% include_relative partials/laoder_warning.md %}
+{% include_relative partials/loader_warning.md %}
 
 ## L'evento viewList (Visualizzazione elenco)
 

@@ -8,7 +8,7 @@ folder: mydoc
 ## Overview
 Una **pagina Prodotto** contiene i dettagli relativi ad un prodotto specifico. L'implementazione nelle pagine Prodotto rappresenta l'elemento fondamentale del processo di monitoraggio, poiché è proprio in queste pagine che l'intento dell'utente viene espresso in modo più compiuto. Vi sono molti utenti che accedono direttamente alle pagine relative ai prodotti senza essere passati per le pagine contenenti i risultati ricerca (o di listing).
 
-{% include_relative partials/laoder_warning.md %}
+{% include_relative partials/loader_warning.md %}
 
 ## L'evento viewItem (visualizzazione elemento)
 Tiene traccia della visita sulla pagina di un singolo oggetto (ad esempio prodotto, proprietà, ecc.)
