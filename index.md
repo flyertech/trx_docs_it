@@ -40,10 +40,10 @@ In aggiunta, se sei anche un [advertiser](#advertiser), potrai reinvestire i gua
 3. Non appena riceviamo la chiamata, Transactionale manderà a Mario una **mail transazionale** con delle offerte,
 4. Se Mario clicca su una delle offerte, verrà generato un **lead**.
 
-# Cosa devi fare? Istruzioni tecniche
+## Cosa devi fare? Istruzioni tecniche
 
 L'integrazione prevede due modalità:
 
   - [Integrazione completa](full_integration.html), **consigliata** per performance ottimali
-  - [Integrazione semplificata](simplified_integration.html), performance *non ottimali*
+  - [Integrazione semplificata](simplified_integration.html)
 
