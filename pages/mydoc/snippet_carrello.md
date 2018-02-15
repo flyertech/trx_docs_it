@@ -5,13 +5,12 @@ permalink: snippet_carrello.html
 folder: mydoc
 ---
 
-## Overview
-Lo snippet deve essere implementato nella **pagina Carrello** per monitorare gli utenti che abbandonano l'ordine prima del pagamento.
-Deve essere implementato nel header del codice sorgente della pagina. I **tag vengono caricati in modo asincrono**, di modo che ciò **non interferisca** con i tempi di caricamento della pagina o con l'esperienza dell'utente.
-Nell'implementazione nella pagina Carrello, sarà necessario il trasferimento dinamico di ID, prezzi e quantità di ciascun prodotto aggiunto al carrello, insieme ai parametri email e relativi al tipo di sito.
-
 ## L'evento viewBasket (visualizzazione Carrello)
-Tiene traccia della pagina del carrello con i dettagli del suo contenuto.
+Lo snippet tiene traccia della pagina del carrello con i dettagli del suo contenuto.
+Deve essere implementato nella **pagina Carrello** per monitorare gli utenti che abbandonano l'ordine prima del pagamento.
+
+{% include_relative partials/loader_warning.md %}
+
 In questo caso i prodotti (items) possono essere forniti solo come oggetti, poiché ci sarà sempre almeno un attributo in più da fornire: la quantità.
 
 ```js

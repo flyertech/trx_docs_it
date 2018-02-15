@@ -1,1 +1,1 @@
-Prima dell'inserimento di questo snippet, assicurarsi di aver configurato correttamente il [loader](snippet_loader.html).
+{% include callout.html content="Questo snippet dovrà essere inserito dopo il [loader](snippet_loader.html)." %}

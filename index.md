@@ -9,7 +9,18 @@ summary: Dettagli integrazione v2
 
 Questa è la **knowledge base tecnica di Transactionale**, dove potrai trovare tutti i dettagli e le spiegazioni tecniche per integrare il tuo e-Shop con Transactionale.
 
+{% comment %}
 {% include callout.html content="Se il tuo shop è basato su **WooCommerce** o **PrestaShop** possiamo fornirti plug-in di integrazione già pronti, che potrai installare senza sforzo e che potranno essere completamente configurati dal tuo backend, senza praticamente nessun intervento tecnico." %}
+{% endcomment %}
+
+# Cosa devi fare? Istruzioni tecniche
+
+L'integrazione prevede due modalità:
+
+  - [Integrazione completa](full_integration.html), **consigliata** per performance ottimali
+  - [Integrazione semplificata](simplified_integration.html)
+
+E' possibile attivare la [modalità di sviluppo](debugging.html) per verificare la correttezza dell'integrazione.
 
 # Funzionamento del network
 
@@ -39,11 +50,4 @@ In aggiunta, se sei anche un [advertiser](#advertiser), potrai reinvestire i gua
 2. Ogni volta che **conclude un ordine** (cosa che in genere accade sulla **pagina di conferma dell’ordine**), il tuo shop **ci notifica** dell’avvenuto ordine tramite uno **snippet di tracciamento**,
 3. Non appena riceviamo la chiamata, Transactionale manderà a Mario una **mail transazionale** con delle offerte,
 4. Se Mario clicca su una delle offerte, verrà generato un **lead**.
-
-## Cosa devi fare? Istruzioni tecniche
-
-L'integrazione prevede due modalità:
-
-  - [Integrazione completa](full_integration.html), **consigliata** per performance ottimali
-  - [Integrazione semplificata](simplified_integration.html)
 

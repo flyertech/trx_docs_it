@@ -5,13 +5,12 @@ permalink: snippet_pagina_prodotto.html
 folder: mydoc
 ---
 
-## Overview
-Una **pagina Prodotto** contiene i dettagli relativi ad un prodotto specifico. L'implementazione nelle pagine Prodotto rappresenta l'elemento fondamentale del processo di monitoraggio, poiché è proprio in queste pagine che l'intento dell'utente viene espresso in modo più compiuto. Vi sono molti utenti che accedono direttamente alle pagine relative ai prodotti senza essere passati per le pagine contenenti i risultati ricerca (o di listing).
+## L'evento viewItem (visualizzazione elemento)
+
+Tiene traccia della visita sulla pagina di un singolo oggetto (ad esempio prodotto, proprietà, ecc.)
 
 {% include_relative partials/loader_warning.md %}
 
-## L'evento viewItem (visualizzazione elemento)
-Tiene traccia della visita sulla pagina di un singolo oggetto (ad esempio prodotto, proprietà, ecc.)
 Gli articoli possono essere forniti in due modi:
 
 - solo id, se la company ha precedentemente fornito un feed del proprio catalogo,
@@ -37,5 +36,4 @@ Gli articoli possono essere forniti in due modi:
     });
 ```
 
-[Google merchant categories](https://www.google.com/basepages/producttype/taxonomy-with-ids.it-IT.txt)
-[Google merchant categories](https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt)
+{% include_relative partials/google_categories.md %}

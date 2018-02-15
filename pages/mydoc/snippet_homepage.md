@@ -5,7 +5,7 @@ permalink: snippet_homepage.html
 folder: mydoc
 ---
 
-## Panoramica
+## L'evento viewHome
 L'implementazione sulla Home page ci consente di monitorare i bouncer (ovvero gli utenti che  accedono alla Home page ma lasciano il sito senza effettuare acquisti). 
 
 {% include_relative partials/loader_warning.md %}

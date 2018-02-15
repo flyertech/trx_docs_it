@@ -10,15 +10,10 @@ folder: mydoc
 
 {% include callout.html content="L'itegrazione semplificata è sconsigliata per l'attività di publishing in quanto riduce quantità e qualità della profilazione automatica, e quindi riduce le performance di lead generation." %}
 
-## Inserisci il loader in tutte le pagine
-Il tag va inserito nella sezione `<head>` della pagina.
-{% include_relative snippets/loader.md %}
+## Inserisci il tag in tutte le pagine
+Il tag va inserito idealmente prima del tag di chiusura `</body>`.
+Il tag include il loader, più l'evento `viewPage`:
 
-## Inserisci il tag `viewPage` in tutte le pagine
-Questo tag può essere inserito preferibilmente prima del tag di chiusura `</body>`, oppure dopo il loader nel tag `<head>`.
-{% include_relative snippets/viewpage.md %}
-
-Puoi anche invocare l'evento `viewPage` contestualmente alla creazione del loader:
 ```html
 <script>
     window._trx = window._trx || [];
@@ -31,7 +26,7 @@ Puoi anche invocare l'evento `viewPage` contestualmente alla creazione del loade
 ```
 
 ## Inserisci il tag `trackTransaction` nella pagina di conferma ordine
-Puoi inserire questo tag preferibilmente prima del tag di chiusura `</body>`, oppure dopo il loader nel tag `<head>`.
+Puoi inserire questo prima del tag di chiusura `</body>`, e in ogni caso prima del loader, cioè lo snippet che va inserito in ogni pagina mostrato nel paragrafo precedente.
 Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'ordine appena concluso.
 
 {% include_relative snippets/tracktransaction.md %}
