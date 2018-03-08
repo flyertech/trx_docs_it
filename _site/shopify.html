@@ -325,8 +325,31 @@ $('#toc').on('click', 'a', function() {
     
 
   <h2 id="panoramica">Panoramica</h2>
+<p>L’integrazione consiste nell’inclusione di un tag Javascript che consente di acquisire le intenzioni dell’utente durante la navigazione del sito web.
+Lo snippet è composto da due parti:</p>
 
-<h2 id="dove-inserire-lo-snippet">Dove inserire lo snippet</h2>
+<ul>
+  <li>
+    <p>Il <a href="snippet_loader.html">loader</a>, una libreria di Javascript che deve essere dichiarata in ogni pagina e si occupa della costruzione e dell’invocazione delle chiamate ai server Transactionale.</p>
+  </li>
+  <li>
+    <p>Il tracker ci consente di acquisire gli eventi di navigazione dei visitatori del sito web (prodotti visti e acquistati), che quindi utilizziamo per determinare le raccomandazioni pertinenti e personalizzate.</p>
+  </li>
+</ul>
+
+<p>Implementare il tracker è rapido, semplice ed invisibile per gli utenti. La qualità delle raccomandazioni dipende in modo diretto dalla qualità dell’implementazione del tracker, inclusi i tag installati in tutte le pagine, il trasferimento dei parametri corretti, etc.</p>
+
+<p>Lo snippet:</p>
+
+<ul>
+  <li>Non altera dal punto di vista visivo il sito ed è completamente invisibile per gli utenti.</li>
+  <li>E’ asincrono e non rallenta il caricamento delle pagine.</li>
+  <li>Deve essere implementato nei punti corretti di ciascuna pagina del sito.</li>
+</ul>
+
+<div class="bs-callout bs-callout-">L’integrazione semplificata è sconsigliata per l’attività di publishing in quanto riduce quantità e qualità della profilazione automatica, e quindi riduce le performance di lead generation.</div>
+
+<h2 id="dove-inserire-lo-snippet-tracktransaction">Dove inserire lo snippet trackTransaction</h2>
 
 <p>Dalla pagina di <strong>Admin</strong> del tuo Shopify, seleziona <strong>Settings</strong></p>
 
@@ -336,7 +359,13 @@ $('#toc').on('click', 'a', function() {
 
 <p><img src="images/shopify/checkout.png" alt="image-title-here" class="img-responsive" /></p>
 
-<p>Inserisci il seguente snippet nel box <strong>Additional script</strong></p>
+<div class="bs-callout bs-callout-">Nello snippet seguente dovrai sostituire “ApiKey” con la tua API Key che troverai sul sito di Transactionale, nella pagina <strong>My Account -&gt; Integration</strong>.</div>
+
+<p><img src="images/shopify/apikey.png" alt="image-title-here" class="img-responsive" /></p>
+
+<p>Copia la tua API Key dalla maschera “Your API Key”. Invece di selezionare il testo puoi anche semplicemente cliccare sul tasto Copy.”</p>
+
+<p>\n Inserisci il seguente snippet nel box <strong>Additional script</strong></p>
 
 <p><img src="images/shopify/add_script.png" alt="image-title-here" class="img-responsive" /></p>
 
@@ -384,15 +413,39 @@ $('#toc').on('click', 'a', function() {
 	<span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
-<p>Dovrai sostituire “ApiKey” con la tua API Key che troverai sul sito di Transactionale, nella pagina <strong>My Account -&gt; Integration</strong>.</p>
-
-<p><img src="images/shopify/apikey.png" alt="image-title-here" class="img-responsive" /></p>
-
-<p>Copia la tua API Key dalla maschera “Your API Key”. Invece di selezionare il testo puoi anche semplicemente cliccare sul tasto Copy.</p>
-
 <p>Salva cliccalndo il pulsante <strong>Save</strong> in alto</p>
 
 <p><img src="images/shopify/save_settings.png" alt="image-title-here" class="img-responsive" /></p>
+
+<h2 id="dove-inserire-il-loader-e-levento-viewpage">Dove inserire il loader e l’evento viewPage</h2>
+
+<p>Dalla pagina di <strong>Admin</strong> del tuo Shopify, seleziona <strong>Online Store</strong></p>
+
+<p><img src="images/shopify/online_store.png" alt="image-title-here" class="img-responsive" /></p>
+
+<p>Dalla sezione <strong>Themes</strong> clicca su <strong>Action-&gt;Edit Code</strong></p>
+
+<p><img src="images/shopify/edit_code.png" alt="image-title-here" class="img-responsive" /></p>
+
+<div class="bs-callout bs-callout-">Nello snippet seguente dovrai sostituire “ApiKey” con la tua API Key che troverai sul sito di Transactionale, nella pagina <strong>My Account -&gt; Integration</strong> come hai fatto in precedenza </div>
+
+<p>Clicca su <strong>theme.liquid</strong> e incolla lo snippet prima della chiusura del tag <strong>&lt;head&gt;</strong></p>
+
+<p><img src="images/shopify/snippet.png" alt="image-title-here" class="img-responsive" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span> <span class="o">||</span> <span class="p">[];</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">_trx</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span>
+        <span class="p">{</span> <span class="na">event</span><span class="p">:</span> <span class="s1">'setAccount'</span><span class="p">,</span> <span class="na">account</span><span class="p">:</span> <span class="s1">'**API-KEY**'</span><span class="p">,</span> <span class="na">country</span><span class="p">:</span> <span class="s1">'IT'</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="na">event</span><span class="p">:</span> <span class="s1">'viewPage'</span> <span class="p">}</span>
+    <span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://static.transactionale.com/trx/v2/trx.js"</span> <span class="na">async=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Clicca sul pulsante <strong>Salva</strong> in alto</p>
+
+<p><img src="images/shopify/save_edit_code.png" alt="image-title-here" class="img-responsive" /></p>
 
 
     <div class="tags">
