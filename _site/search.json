@@ -1,0 +1,301 @@
+[
+
+
+
+
+{
+"title": "Cookies",
+"tags": "",
+"keywords": "",
+"url": "mydoc_cookies.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Eventi personalizzati",
+"tags": "",
+"keywords": "",
+"url": "custom_events.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Modalità di sviluppo",
+"tags": "",
+"keywords": "",
+"url": "debugging.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Overriding default settings",
+"tags": "",
+"keywords": "",
+"url": "mydoc_default_settings.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Documentazione entità",
+"tags": "",
+"keywords": "",
+"url": "entities.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Documentazione eventi",
+"tags": "",
+"keywords": "",
+"url": "events.html",
+"summary": ""
+}
+,
+
+
+
+
+
+{
+"title": "Integrazione completa",
+"tags": "",
+"keywords": "",
+"url": "full_integration.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Panoramica",
+"tags": "",
+"keywords": "",
+"url": "index.html",
+"summary": "Dettagli integrazione v2"
+}
+,
+
+
+
+
+
+
+
+{
+"title": "Shopify",
+"tags": "",
+"keywords": "",
+"url": "shopify.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Integrazione semplificata",
+"tags": "",
+"keywords": "",
+"url": "simplified_integration.html",
+"summary": ""
+}
+,
+
+
+
+
+
+{
+"title": "Snippet nella pagina carrello",
+"tags": "",
+"keywords": "",
+"url": "snippet_carrello.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Snippet nella home page",
+"tags": "",
+"keywords": "",
+"url": "snippet_homepage.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Snippet loader",
+"tags": "",
+"keywords": "",
+"url": "snippet_loader.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Snippet nella pagina di conferma dell&#39;ordine",
+"tags": "",
+"keywords": "",
+"url": "snippet_pagina_conferma.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Snippet nella pagina prodotto",
+"tags": "",
+"keywords": "",
+"url": "snippet_pagina_prodotto.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Snippet nella pagina di Risultati della ricerca/Catalogo",
+"tags": "",
+"keywords": "",
+"url": "snippet_pagina_ricerca.html",
+"summary": ""
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"title": "Webhook / lead tracking",
+"tags": "",
+"keywords": "",
+"url": "webhook.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "assetscssstyle.css",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesmydocpartialsgoogle_categories.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesmydocpartialsintegration_overview.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesmydocpartialsloader_warning.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesmydocsnippetsloader.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesmydocsnippetsshopify.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesmydocsnippetstracktransaction.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesmydocsnippetsviewpage.html",
+"summary": ""
+}
+
+
+
+
+
+
+]
