@@ -14,7 +14,7 @@ entries:
       url: /index.html
       output: web, pdf
 
-  - title: Istruzioni tecniche
+  - title: Istruzioni tecniche custom
     output: web, pdf
     folderitems:
 
@@ -66,6 +66,14 @@ entries:
     
     - title: Webhook
       url: /webhook.html
+      output: web, pdf
+
+  - title: Istruzioni tecniche piattaforme
+    output: web, pdf
+    folderitems:
+    
+    - title: Shopify
+      url: /shopify.html
       output: web, pdf
 
   - title: Lingua

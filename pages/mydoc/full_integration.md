@@ -9,12 +9,11 @@ folder: mydoc
 {% include_relative partials/integration_overview.md %}
 
 ## Dove dovresti implementare lo snippet
-Per prima cosa, bisogna inserire il loader [come descritto qui.](snippet_loader.html)
-
+Per prima cosa, bisogna inserire il loader [come descritto qui.](snippet_loader.html) 
 Successivamente, devi implementare lo snippet in cinque pagine diverse:
 
 - [Home page](#home-page)
-- [Lista prodotti](#lista-prodotti)
+- [Lista prodotti](#lista-prodotti) 
 - [Dettaglio prodotto](#dettaglio-prodotto)
 - [Carrello](#carrello)
 - [Pagina di conferma dell'ordine](#pagina-conferma)
