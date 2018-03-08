@@ -30,3 +30,7 @@ Dovrai sostituire "ApiKey" con la tua API Key che troverai sul sito di Transacti
 ![image-title-here](/images/shopify/apikey.png){:class="img-responsive"}
 
 Copia la tua API Key dalla maschera “Your API Key”. Invece di selezionare il testo puoi anche semplicemente cliccare sul tasto Copy.
+
+Clicca sul tasto **Save** in alto
+
+![image-title-here](/images/shopify/save_settings.png){:class="img-responsive"}
