@@ -9,8 +9,6 @@ folder: mydoc
 ## Panoramica
 {% include_relative partials/integration_overview.md %}
 
-{% include callout.html content="L'integrazione semplificata è sconsigliata per l'attività di publishing in quanto riduce quantità e qualità della profilazione automatica, e quindi riduce le performance di lead generation." %}
-
 ## Dove inserire lo snippet trackTransaction
 
 Dalla pagina di **Admin** del tuo Shopify, seleziona **Settings**
@@ -27,7 +25,7 @@ Seleziona **Checkout**
 
 Copia la tua API Key dalla maschera “Your API Key”. Invece di selezionare il testo puoi anche semplicemente cliccare sul tasto Copy."
 
-\n Inserisci il seguente snippet nel box **Additional script**
+Inserisci il seguente snippet nel box **Additional script**
 
 ![image-title-here](images/shopify/add_script.png){:class="img-responsive"}
 
