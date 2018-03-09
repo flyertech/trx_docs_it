@@ -44,7 +44,7 @@ Dalla pagina di **Admin** del tuo Shopify, seleziona **Online Store**
 
 ![image-title-here](images/shopify/online_store.png){:class="img-responsive"}
 
-Dalla sezione **Themes** clicca su **Action->Edit Code**
+Dalla pagina **Themes->current theme** clicca su **Action->Edit Code**
 
 ![image-title-here](images/shopify/edit_code.png){:class="img-responsive"}
 
