@@ -17,7 +17,7 @@ Il tag include il loader, più l'evento `viewPage`:
 {% include_relative snippets/loader_viewPage.md %}
 
 ## Inserisci il tag `trackTransaction` nella pagina di conferma ordine
-Puoi inserire questo prima del tag di chiusura `</body>`, e in ogni caso prima del loader, cioè lo snippet che va inserito in ogni pagina mostrato nel paragrafo precedente.
+Puoi inserire questo prima del tag di chiusura `</body>`, e in ogni caso dopo il loader, cioè lo snippet che va inserito in ogni pagina mostrato nel paragrafo precedente.
 Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'ordine appena concluso.
 
 {% include_relative snippets/tracktransaction.md %}
