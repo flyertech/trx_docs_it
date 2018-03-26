@@ -22,5 +22,5 @@ Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'or
 
 {% include_relative snippets/tracktransaction.md %}
 
-##Web touchpoint
+## Web touchpoint
 Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate le offerte nella tua pagina perciò dovrai inserire un `<div id="tr_touchpoint_container"></div>` nel punto in cui desideri.
