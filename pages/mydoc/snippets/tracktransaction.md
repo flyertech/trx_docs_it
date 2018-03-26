@@ -35,8 +35,7 @@ window._trx.push(
         },
         // Esempio con integrazione annunci direttamente in pagina ordine
         touchpointType: 'web', // Default: mail
-        touchpointId: '123', // OBBLIGATORIO se touchpointType = 'web'
-        containerId: 'test' // Default: tr_touchpoint_id - il <div> dentro cui mostrare le offerte
+        touchpointId: '123' // OBBLIGATORIO se touchpointType = 'web'
     }
 );
 ```
