@@ -13,6 +13,25 @@ Nell'implementare lo snippet nella pagina di Conferma dell'ordine, sarà necessa
 
 Tiene traccia di una **trasazione completa** (ordine, booking etc.). Ciò consentirà il tracciamento delle conversioni oltre ad intercettare la consegna delle offerte attraverso uno dei **touchpoints** disponibili: web, mail o bulk.  Per i touchpoint Web è possibile impostare **touchpointType**: "web" e chiamerà implicitamente [triggerWebTouchpoint](#triggerWebTouchpoint).
 
+
+
 {% include_relative snippets/tracktransaction.md %}
 
 {% include_relative partials/google_categories.md %}
+
+## Touchpoint web o auto
+Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate le offerte nella tua pagina perciò dovrai inserire un `<div id="tr_touchpoint_container"></div>` nel punto desiderato. 
+
+## Banner offerte
+Nel caso si utilizzi un touchpoint web in versione banner, è possibile scegliere due layout: orizzontale (default) oppure verticale.
+
+![Banner orizzontale](images/banner_horizontal.png){:class="img-responsive"}
+
+Aggiungendo la classe `tr-touchpoint-layout-vertical` nel `<div>` in questo modo:<br>
+ `<div id="tr_touchpoint_container" class="tr-touchpoint-layout-vertical"></div>` <br>
+ il banner avrà layout verticale:
+
+![Banner verticale](images/banner_vertical.png){:class="img-responsive"} 
+
+
+
