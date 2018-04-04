@@ -34,7 +34,7 @@ window._trx.push(
             optin: true // Se l'utente ha dato il consenso per le comunicazioni commerciali
         },
         // Esempio con integrazione annunci direttamente in pagina ordine
-        touchpointType: 'web', // Default: mail
+        touchpointType: 'web', // Può essere: web, mail o auto. Default: mail
         touchpointId: '123' // OBBLIGATORIO se touchpointType = 'web'
     }
 );
