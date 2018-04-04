@@ -403,24 +403,27 @@ Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all’
         <span class="p">},</span>
         <span class="c1">// Esempio con integrazione annunci direttamente in pagina ordine</span>
         <span class="na">touchpointType</span><span class="p">:</span> <span class="s1">'web'</span><span class="p">,</span> <span class="c1">// Può essere: web, mail o auto. Default: mail</span>
-        <span class="na">touchpointId</span><span class="p">:</span> <span class="s1">'123'</span> <span class="c1">// OBBLIGATORIO se touchpointType = 'web'</span>
+        <span class="na">touchpointId</span><span class="p">:</span> <span class="s1">'123'</span> <span class="c1">// Facoltativo, solo se touchpointType = 'web' o 'auto'</span>
     <span class="p">}</span>
 <span class="p">);</span>
 </code></pre></div></div>
 
 <h2 id="selezione-automatica-touchpoint">Selezione automatica touchpoint</h2>
-<p>Inserendo in touchpointType auto, in base ai campi compilati verrà attivato automaticamente il touchpoint di tipo mail o web. Nel caso in cui venga attivato il touchpoint di tipo web e non è stato inserito il touchpointId, quest’ultimo sarà assegnato con un valore di default.</p>
+<p>Inserendo <code class="highlighter-rouge">auto</code> come <code class="highlighter-rouge">touchpointType</code>, verrà attivato automaticamente il touchpoint di tipo mail o web in base ai valori forniti. Nel caso in cui venga attivato il touchpoint di tipo web e non è stato inserito il touchpointId, il sistema utilizzerà quello di default.</p>
 
-<h2 id="touchpoint-web">Touchpoint web</h2>
-<p>Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate le offerte nella tua pagina perciò dovrai inserire un <code class="highlighter-rouge">&lt;div id="tr_touchpoint_container"&gt;&lt;/div&gt;</code> nel punto in cui desideri. Verrà visualizzato il seguente banner con layout orizzontale.</p>
+<h2 id="touchpoint-web-o-auto">Touchpoint web o auto</h2>
+<p>Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate le offerte nella tua pagina perciò dovrai inserire un <code class="highlighter-rouge">&lt;div id="tr_touchpoint_container"&gt;&lt;/div&gt;</code> nel punto desiderato.</p>
 
-<p><img src="images/banner_horizontal.png" alt="image-title-here" class="img-responsive" /></p>
+<h2 id="banner-offerte">Banner offerte</h2>
+<p>Nel caso si utilizzi un touchpoint web in versione banner, è possibile scegliere due layout: orizzontale (default) oppure verticale.</p>
+
+<p><img src="images/banner_horizontal.png" alt="Banner orizzontale" class="img-responsive" /></p>
 
 <p>Aggiungendo la classe <code class="highlighter-rouge">tr-touchpoint-layout-vertical</code> nel <code class="highlighter-rouge">&lt;div&gt;</code> in questo modo:<br />
  <code class="highlighter-rouge">&lt;div id="tr_touchpoint_container" class="tr-touchpoint-layout-vertical"&gt;&lt;/div&gt;</code> <br />
  il banner avrà layout verticale:</p>
 
-<p><img src="images/banner_vertical.png" alt="image-title-here" class="img-responsive" /></p>
+<p><img src="images/banner_vertical.png" alt="Banner verticale" class="img-responsive" /></p>
 
 
     <div class="tags">

@@ -35,7 +35,7 @@ window._trx.push(
         },
         // Esempio con integrazione annunci direttamente in pagina ordine
         touchpointType: 'web', // Può essere: web, mail o auto. Default: mail
-        touchpointId: '123' // OBBLIGATORIO se touchpointType = 'web'
+        touchpointId: '123' // Facoltativo, solo se touchpointType = 'web' o 'auto'
     }
 );
 ```

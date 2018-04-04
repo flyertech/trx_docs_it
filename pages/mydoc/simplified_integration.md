@@ -23,15 +23,18 @@ Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'or
 {% include_relative snippets/tracktransaction.md %}
 
 ## Selezione automatica touchpoint
-Inserendo in touchpointType auto, in base ai campi compilati verrà attivato automaticamente il touchpoint di tipo mail o web. Nel caso in cui venga attivato il touchpoint di tipo web e non è stato inserito il touchpointId, quest'ultimo sarà assegnato con un valore di default.
+Inserendo `auto` come `touchpointType`, verrà attivato automaticamente il touchpoint di tipo mail o web in base ai valori forniti. Nel caso in cui venga attivato il touchpoint di tipo web e non è stato inserito il touchpointId, il sistema utilizzerà quello di default.
 
-## Touchpoint web
-Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate le offerte nella tua pagina perciò dovrai inserire un `<div id="tr_touchpoint_container"></div>` nel punto in cui desideri. Verrà visualizzato il seguente banner con layout orizzontale.
+## Touchpoint web o auto
+Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate le offerte nella tua pagina perciò dovrai inserire un `<div id="tr_touchpoint_container"></div>` nel punto desiderato. 
 
-![image-title-here](images/banner_horizontal.png){:class="img-responsive"}
+## Banner offerte
+Nel caso si utilizzi un touchpoint web in versione banner, è possibile scegliere due layout: orizzontale (default) oppure verticale.
+
+![Banner orizzontale](images/banner_horizontal.png){:class="img-responsive"}
 
 Aggiungendo la classe `tr-touchpoint-layout-vertical` nel `<div>` in questo modo:<br>
  `<div id="tr_touchpoint_container" class="tr-touchpoint-layout-vertical"></div>` <br>
  il banner avrà layout verticale:
 
-![image-title-here](images/banner_vertical.png){:class="img-responsive"}
+![Banner verticale](images/banner_vertical.png){:class="img-responsive"}
