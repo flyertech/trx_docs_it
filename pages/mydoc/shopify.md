@@ -19,7 +19,6 @@ Seleziona **Checkout**
 
 ![image-title-here](images/shopify/checkout.png){:class="img-responsive"}
 
-{% include callout.html content="Nello snippet seguente dovrai sostituire \"ApiKey\" con la tua API Key che troverai sul sito di Transactionale, nella pagina **My Account -> Integration**." %}
 
 ![image-title-here](images/shopify/apikey.png){:class="img-responsive"}
 
@@ -27,12 +26,11 @@ Copia la tua API Key dalla maschera “Your API Key”. Invece di selezionare il
 
 Inserisci il seguente snippet nel box **Additional script**
 
+{% include callout.html content="Nello snippet seguente dovrai sostituire \"ApiKey\" con la tua API Key che troverai sul sito di Transactionale, nella pagina **My Account -> Integration**." %}
 ![image-title-here](images/shopify/add_script.png){:class="img-responsive"}
 
 
 {% highlight html %}{% include_relative snippets/shopify.md %}{% endhighlight %}
-
-
 
 Salva cliccalndo il pulsante **Save** in alto
 
