@@ -1,1 +1,0 @@
-{% include callout.html content="Questo snippet dovrà essere inserito dopo il [loader](snippet_loader.html)." %}
