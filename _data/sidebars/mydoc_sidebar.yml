@@ -75,6 +75,10 @@ entries:
     - title: Shopify
       url: /shopify.html
       output: web, pdf
+    
+    - title: Prestashop <= 1.6
+      url: /prestashop16.html
+      output: web, pdf
 
   - title: Lingua
     output: web, pdf
