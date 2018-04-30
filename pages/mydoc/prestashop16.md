@@ -1,53 +1,66 @@
 ---
-title:  "How to install and configure the Prestashop module"
+title:  "Come installare e configurare il plugin Prestashop >= 1.6"
 permalink: prestashop16.html
 sidebar: mydoc_sidebar
 folder: mydoc
 ---
 
 
-### Obtaining the latest Prestashop module
+### Scarica l'ultima versione del plugin Prestashop
+ Puoi scaricare l'ultima versione del plugin prestashop dalla sezione  **My Account -> Integration -> Select Prestashop <= 1.6**, clicca su **Download the plugin**
 
-You can download the latest version from your dashboard by going to My Account -> Integration -> Select Prestashop and click on the Prestashop button.
+{% include image.html file="prestashop16/downloadplugin.png" url="/images/prestashop16/downloadplugin.png" %}
 
-### Installing the module
+### Installa il modulo
 
-Go to the Modules page:
+Nella sezione **Modules and Services** del tuo Prestashop clicca su **Add new module**, nel form che comparirà clicca su **Choose a file** seleziona il plugin scaricato e clicca su **Upload this module**.
 
-<div class='img-responsive'><img src="{{ site.url }}/assets/img/prestashop/modules_menu.png" /></div>
+{% include image.html file="prestashop16/1.png" url="/images/prestashop16/1.png" %}
 
-Click on the *Add new module* button:
+Comparirà la lista dei moduli, in particolare vedrai il modulo Transactionale appena caricato. Dovrai cliccare su **Install**.
 
-<div class='img-responsive'><img src="{{ site.url }}/assets/img/prestashop/modules_buttons.png" /></div>
+{% include image.html file="prestashop16/2.png" url="/images/prestashop16/2.png" %}
 
-A form will appear where you can upload the module's zip file:
+Apparirà un popup, clicca su **Procedeed with installation**
 
-<div class='img-responsive'><img src="{{ site.url }}/assets/img/prestashop/module_upload.png" /></div>
+{% include image.html file="prestashop16/3.png" url="/images/prestashop16/3.png" %}
 
-After installing the module, you will need to enable it:
+### Dettaglio configurazione
+Verrai reindirizzato alla pagina di configurazione del modulo
+{% include image.html file="prestashop16/4.png" url="/images/prestashop16/4.png" %}
 
-<div class='img-responsive'><img src="{{ site.url }}/assets/img/prestashop/module_installed.png" /></div>
+Di seguito i dettagli dei campi visualizzati
 
-Now click con the *Configuration* button to configure the module:
+*Auth Key*|utilizzata per identicare il tuo account. **Segui le istruzioni per copiarla qui**.
+*Country*| le due lettere del codice ISO dove opera il tuo shop.
+*Touchpoint Type*|come veicoli le offerte ai tuoi clienti. Può essere Mail, Web o Mail+Web
+*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id,altrimenti prenderà un id di default.
+*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il test da visualizzare sopra le offerte.
+*Import leads automatically*|Abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
 
-<div class='img-responsive'><img src="{{ site.url }}/assets/img/prestashop/module_configuration.png" /></div>
+{% include image.html file="prestashop16/5.png" url="/images/prestashop16/5.png" %}
 
-#### Settings details
+### Abilita/Disabilita Optin
+Per farlo funzionare, è necessario attivare l'opt-in dalla sezione di Preferences -> Customers.
+{% include image.html file="prestashop16/optin.png" url="/images/prestashop16/optin.png" %}
 
-*Auth Key*|this is used to identify your account. **Follow the instructions below to fill it**.
-*Country code*|the two-letter ISO code for the country in which your shop operates. I.E. *IT*.
-*Touchpoint Tyèe*|how to deliver offers to your customers. Make sure you configure your touchpoints in your Transactionale account
-*Order confirmation touchpoint text*|if using the web touchpoint described above, you can specify the text to display above the offers.
-*Automatically import leads*|Enable leads automatic import. When enabled, copy and paste the displayed URL into your Transactionale account at My Account -> Integration -> Webhook URL
+### Ultimi step
 
-### Last steps
+Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-> Integration** ed incollala nel campo Auth Key nella pagina di configuarzione del modulo Prestashop
 
-Copy your Auth Key from your Transactionale account under My Account -> Integration:
+{% include image.html file="prestashop16/apikey.png" url="/images/prestashop16/apikey.png" %}
 
-<div class='img-responsive'><img src="{{ site.url }}/assets/img/integrate_api_key.png" /></div>
-
-and paste it into the AUTH7 KEY field of the module configuration.
-
-### Enabling automatic import of leads
+Ricorda di Salvare le modifiche.
 
 
+### Abilitare l'importazione automatica dei leads - Webhook
+
+Per l'importazione automatica dei leads tramite webhook devi selezionare **YES** nel campo **Import leads automatically**
+
+{% include image.html file="prestashop16/webhook.png" url="/images/prestashop16/webhook.png" %}
+
+Incolla il link che ti compare, nella sezione  **My Account-> Integration** del tuo account Transactionale nel campo **Webhook Url**
+
+{% include image.html file="prestashop16/webhookurl.png" url="/images/prestashop16/webhookurl.png" %}
+
+Per verificarne il corretto funzionamento clicca su **Test**.
