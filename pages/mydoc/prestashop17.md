@@ -24,23 +24,23 @@ Verrai reindirizzato alla pagina di configurazione del modulo
 
 Di seguito i dettagli dei campi visualizzati
 
-*Auth Key*|utilizzata per identicare il tuo account. **Segui le istruzioni per copiarla qui**.
+*Auth Key*|utilizzata per identificare il tuo account. **Segui le istruzioni per copiarla qui**.
 *Country*| le due lettere del codice ISO dove opera il tuo shop.
 *Touchpoint Type*|come veicoli le offerte ai tuoi clienti. Può essere Mail, Web o Mail+Web.
-*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id,altrimenti prenderà un id di default.
-*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il test da visualizzare sopra le offerte.
-*Automatically import leads*|Abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
+*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id, altrimenti prenderà un id di default.
+*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il testo da visualizzare sopra le offerte.
+*Automatically import leads*|abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
 
 
 {% include image.html file="prestashop17/5.png" url="/images/prestashop17/5.png" %}
 
 ### Abilita/Disabilita Optin
-Per farlo funzionare, è necessario attivare l'opt-in dalla sezione di **Preferences -> Customers**.
+E' necessario attivare l'opt-in dalla sezione di **Preferences -> Customers**.
 {% include image.html file="prestashop17/optin.png" url="/images/prestashop17/optin.png" %}
 
 ### Ultimi step
 
-Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-> Integration** ed incollala nel campo Auth Key nella pagina di configuarzione del modulo Prestashop
+Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-> Integration** ed incollala nel campo Auth Key nella pagina di configurazione del modulo Prestashop
 
 {% include image.html file="prestashop17/apikey.png" url="/images/prestashop17/apikey.png" %}
 

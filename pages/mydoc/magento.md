@@ -29,7 +29,7 @@ Di seguito i dettagli dei campi visualizzati:
 *Attivato*| seleziona Si per abilitare il plugin.
 *Debug*| seleziona No.
 *Auth Key*|utilizzata per identicare il tuo account. **Segui le istruzioni per copiarla qui**.
-*Import leads automatically*|Abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
+*Import leads automatically*|abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
 
 {% include image.html file="magento/webhook.png" url="/images/magento/webhook.png" %}
 

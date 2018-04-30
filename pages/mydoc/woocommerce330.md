@@ -23,14 +23,13 @@ ed infine installa ora
 
 {% include image.html file="woocommerce/3.png" url="/images/woocommerce/3.png" %}
 
-Verrai reidirizzato nella sezione Plugin e trovarei Trasactionale.
-
+Verrai reindirizzato nella sezione Plugin e trovarei Trasactionale.
 
 Se non hai specificato nessuna pagina di Termini e condizioni per il tuo Shop vedrai il link **Woocommerce Checkout Settings**
 
 {% include image.html file="woocommerce/checkoutsettings.png" url="/images/woocommerce/checkoutsettings.png" %}
 
-In questa pagina dovrai insertire la pagina in cui sono specificati **Termini e Condizioni** del tuo shop
+In questa pagina dovrai inserire la pagina in cui sono specificati **Termini e Condizioni** del tuo shop
 
 {% include image.html file="woocommerce/termsandconditions.png" url="/images/woocommerce/termsandconditions.png" %}
 
@@ -44,27 +43,27 @@ clicca su **Settings** relativo al modulo Transactionale
 
 ### Dettaglio configurazione
 
-Ti troverai alla pagina di configurazione del modulo
+Ti troverai nella pagina di configurazione del modulo
 
 Di seguito i dettagli dei campi visualizzati
 
 *Transactionale status*|seleziona Enabled per abilitare il plugin.
-*Auth Key*|utilizzata per identicare il tuo account. **Segui le istruzioni per copiarla qui**.
+*Auth Key*|utilizzata per identificare il tuo account. **Segui le istruzioni per copiarla qui**.
 *Country code*| le due lettere del codice ISO dove opera il tuo shop.
-*Product Format*|insica il formato del prodotto che indenti inviare (Full o Id only).
+*Product Format*|indica il formato del prodotto che intendi inviare (Full o Id only).
 *Touchpoint Type*|come veicoli le offerte ai tuoi clienti. Può essere Mail, Web o Mail+Web
-*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id,altrimenti prenderà un id di default.
-*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il test da visualizzare sopra le offerte.
+*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id, altrimenti prenderà un id di default.
+*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il testo da visualizzare sopra le offerte.
 
 {% include image.html file="woocommerce/6.png" url="/images/woocommerce/6.png" %}
 
 
 ### Ultimi step
 
-Copia la tua Auth Key dal tuo account Transactionale dalla sezione My Account-> Integration ed incollala nel campo Auth Key nella pagina di configuarzione del plugin WooCommerce.
+Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-> Integration** ed incollala nel campo Auth Key nella pagina di configurazione del plugin WooCommerce.
 
 {% include image.html file="woocommerce/apikey.png" url="/images/woocommerce/apikey.png" %}
 
-Dopo aver compilato tutti i campi richiesti clicca su Save
+Dopo aver compilato tutti i campi richiesti clicca su Save.
 
 {% include image.html file="woocommerce/7.png" url="/images/woocommerce/7.png" %}
