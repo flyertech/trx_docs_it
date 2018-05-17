@@ -14,11 +14,14 @@ folder: mydoc
 Il tag va inserito idealmente prima del tag di chiusura `</body>`.
 Il tag include il loader, più l'evento `viewPage`:
 
+
 {% include_relative snippets/loader_viewPage.md %}
 
 ## Inserisci il tag `trackTransaction` nella pagina di conferma ordine
 Puoi inserire questo prima del tag di chiusura `</body>`, e in ogni caso dopo il loader, cioè lo snippet che va inserito in ogni pagina mostrato nel paragrafo precedente.
 Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'ordine appena concluso.
+
+{% include callout.html content="ATTENZIONE: I valori d'esempio ('xxxx') vanno sostituiti con le relative variabili, potete eliminare i campi di cui non tracciate il loro valore. " %}
 
 {% include_relative snippets/tracktransaction.md %}
 

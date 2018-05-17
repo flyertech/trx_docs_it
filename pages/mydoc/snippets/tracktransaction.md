@@ -29,7 +29,7 @@ window._trx.push(
             lastName: 'Xxxxxxx',
             company: 'xxxxxxxx',
             email: 'xxxxx@xxxx.xx',
-            birthdate: 'aaaa-mm-gg', // AAAA-MM-GG
+            birthDate: 'aaaa-mm-gg',
             gender: 'x', 
             optin: xxxx // Se l'utente ha dato il consenso per le comunicazioni commerciali
         },
