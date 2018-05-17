@@ -3,39 +3,41 @@ window._trx.push(
     {
         event: 'trackTransaction',
         transaction: {
-            id: 'ABC123', // Codice ordine
-            subtotal: 123.45,
-            shipping: 3.5,
-            discount: 0.5,
-            total: 1.5, // Required
-            coupon: 'CPN', 
+            id: 'xxxxx', // Codice ordine
+            subtotal: xxx.xx,
+            shipping: xxx.xx,
+            discount: xxx.xx,
+            total: xxx.xx, // Required
+            coupon: 'xxx', 
             currency: 'EUR', // EUR by default
         },
         items: [
-            {id: 1, price: 12.34, quantity: 1}, // Same format as viewBasket
-            {id: 2, price: 23.45, quantity: 2},
+            {id: x, price: xx.xx, quantity: x}, 
+            {id: x, price: xx.xx, quantity: x},
         ],
         address: {
-            address: 'test',
-            address2: 'test',
-            city: 'Test',
-            postalCode: '70121',
+            address: 'xxxxxx',
+            address2: 'xxxxxx',
+            city: 'xxxxx',
+            postalCode: 'xxxxx',
             country: 'IT',
-            phone: '123456789',
-            phoneMobile: '123456789',
+            phone: 'xxxxxxxx',
+            phoneMobile: 'xxxxxxxxx',
         },
         customer: {
-            firstName: 'Nome',
-            lastName: 'Cognome',
-            company: 'Ragione sociale',
-            email: 'indirizzo@email.it',
-            birthdate: '1900-01-01', // AAAA-MM-GG
-            gender: 'm', // m o f
-            optin: true // Se l'utente ha dato il consenso per le comunicazioni commerciali
+            firstName: 'Xxxxx',
+            lastName: 'Xxxxxxx',
+            company: 'xxxxxxxx',
+            email: 'xxxxx@xxxx.xx',
+            birthdate: 'aaaa-mm-gg', // AAAA-MM-GG
+            gender: 'x', 
+            optin: xxxx // Se l'utente ha dato il consenso per le comunicazioni commerciali
         },
         // Esempio con integrazione annunci direttamente in pagina ordine
-        touchpointType: 'web', // Può essere: web, mail o auto. Default: mail
-        touchpointId: '123' // Facoltativo, solo se touchpointType = 'web' o 'auto'
+        touchpointType: 'auto', 
     }
 );
+```
+```html
+<div id="tr_touchpoint_container"></div>
 ```
