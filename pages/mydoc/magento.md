@@ -22,7 +22,7 @@ Clicca sul **Settings** di Transactionale.
 
 ### Dettaglio configurazione
 
-Ti troverai alla pagina di configurazione del modulo.
+Ti troverai alla pagina generica di configurazione del modulo.
 
 Di seguito i dettagli dei campi visualizzati:
 
@@ -33,6 +33,17 @@ Di seguito i dettagli dei campi visualizzati:
 
 {% include image.html file="magento/webhook.png" url="/images/magento/webhook.png" %}
 
+Dovrai anche completare la configurazione per il singolo store.
+
+Di seguito i dettagli dei campi visualizzati:
+
+*Country Code*| le due lettere del codice ISO dove opera il tuo shop.
+*Touchpoint Type*| seleziona Auto
+*Web Touchpoint Id*| se utilizzi il touchpoint web, devi specificare un id, altrimenti prenderà un id di default.
+*Web Touchpoint Text*| se utilizzi il touchpoint web, è possibile specificare il testo da visualizzare sopra le offerte.
+*Opt-in Privacy Link* | link della tua privacy policy.
+
+{% include image.html file="magento/configuration_store.png" url="/images/magento/configuration_store.png" %}
 
 ### Ultimi step
 
