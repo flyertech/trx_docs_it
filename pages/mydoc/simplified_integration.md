@@ -34,10 +34,10 @@ Se utilizzi il touchpoint web dovrai specificare dove vuoi che vengano mostrate 
 ## Banner offerte
 Nel caso si utilizzi un touchpoint web in versione banner, è possibile scegliere due layout: orizzontale (default) oppure verticale.
 
-![Banner orizzontale](images/banner_horizontal.png){:class="img-responsive"}
+{% include image.html file="banner_horizontal" url="images/banner_horizontal.png" %}
 
 Aggiungendo la classe `tr-touchpoint-layout-vertical` nel `<div>` in questo modo:<br>
  `<div id="tr_touchpoint_container" class="tr-touchpoint-layout-vertical"></div>` <br>
  il banner avrà layout verticale:
 
-![Banner verticale](images/banner_vertical.png){:class="img-responsive"}
+{% include image.html file="banner_vertical" url="images/banner_vertical.png" %}
