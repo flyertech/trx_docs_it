@@ -56,3 +56,8 @@ Clicca su **theme.liquid** e incolla lo snippet prima della chiusura del tag **<
 Clicca sul pulsante **Salva** in alto 
 
 {% include image.html file="shopify/save_edit_code.png" url="images/shopify/save_edit_code.png" %}
+
+## Verifica integrazione e webhook
+Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
+
+{% include_relative partials/link_verify.md %}

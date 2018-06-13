@@ -67,3 +67,9 @@ Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-
 Dopo aver compilato tutti i campi richiesti clicca su Save.
 
 {% include image.html file="woocommerce/7.png" url="images/woocommerce/7.png" %}
+
+### Verifica integrazione e webhook
+
+Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
+
+{% include_relative partials/link_verify.md %}

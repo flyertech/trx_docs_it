@@ -54,6 +54,8 @@ Per l'importazione automatica dei leads tramite webhook devi selezionare **YES**
 
 Incolla il link che ti compare, nella sezione  **My Account-> Integration** del tuo account Transactionale nel campo **Webhook Url**
 
-{% include image.html file="prestashop17/webhookurl.png" url="images/prestashop17/webhookurl.png" %}
+### Verifica integrazione e webhook
 
-Per verificarne il corretto funzionamento clicca su **Test**.
+Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
+
+{% include_relative partials/link_verify.md %}

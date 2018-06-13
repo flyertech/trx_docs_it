@@ -5,10 +5,10 @@ permalink: full_integration.html
 folder: mydoc
 ---
 
-## Panoramica
+### Panoramica
 {% include_relative partials/integration_overview.md %}
 
-## Dove dovresti implementare lo snippet
+### Dove dovresti implementare lo snippet
 Per prima cosa, bisogna inserire il loader [come descritto qui.](snippet_loader.html) 
 Successivamente, devi implementare lo snippet in cinque pagine diverse:
 
@@ -45,7 +45,7 @@ E' possibile ricevere automaticamente **in tempo reale** i dati dei lead generat
 
 Trovi tutti i dettagli nella sezione [webhook](webhook.html).
 
-## Integrazioni opzionali o personalizzate
+### Integrazioni opzionali o personalizzate
 TODO
 
 ### Pagina generica

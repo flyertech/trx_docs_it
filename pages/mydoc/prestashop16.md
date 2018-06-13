@@ -63,4 +63,8 @@ Incolla il link che ti compare, nella sezione  **My Account-> Integration** del 
 
 {% include image.html file="prestashop16/webhookurl.png" url="images/prestashop16/webhookurl.png" %}
 
-Per verificarne il corretto funzionamento clicca su **Test**.
+### Verifica integrazione e webhook
+
+Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
+
+{% include_relative partials/link_verify.md %}

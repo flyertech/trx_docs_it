@@ -6,6 +6,7 @@ entries:
   version: 2.0
   folders:
 
+
   - title: Panoramica
     output: web, pdf
     folderitems:
@@ -92,6 +93,18 @@ entries:
       url: /magento.html
       output: web, pdf
 
+  - title: Verifica integrazione e webhook
+    output: web, pdf
+    folderitems:
+
+      - title: Verifica integrazione
+        url: /verify_integration.html
+        output: web, pdf
+
+      - title: Verifica webhook
+        url: /verify_webhook.html
+        output: web, pdf
+  
   - title: Lingua
     output: web, pdf
     folderitems:

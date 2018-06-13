@@ -62,6 +62,8 @@ Per l'importazione automatica dei leads tramite webhook devi selezionare **YES**
 
 Incolla il link che ti compare, nella sezione  **My Account-> Integration** del tuo account Transactionale nel campo **Webhook Url**
 
-{% include image.html file="magento/webhookurl.png" url="images/magento/webhookurl.png" %}
+### Verifica integrazione e webhook
 
-Per verificarne il corretto funzionamento clicca su **Test**.
+Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
+
+{% include_relative partials/link_verify.md %}
