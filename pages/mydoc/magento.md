@@ -10,6 +10,11 @@ folder: mydoc
 
 {% include image.html file="magento/downloadplugin.png" url="images/magento/downloadplugin.png" %}
 
+### Disinstalla la vecchia versione del modulo
+Se avevi già installato il plugin di Magento procedi prima con la disistallazione dello stesso.
+
+{% include image.html file="magento/unistall.png" url="images/magento/unistall.png" %}
+
 ### Installa il modulo
 
 Da **Magento Connect Manager** clicca su **Scegli File** poi **Upload**.
@@ -26,12 +31,13 @@ Ti troverai alla pagina generica di configurazione del modulo.
 
 Di seguito i dettagli dei campi visualizzati:
 
-*Attivato*| seleziona Si per abilitare il plugin.
+*Sending mode*| Client side (Javascript) di default. Se hai un checkout customizzato seleziona l'altra opzione.
+*Mode*| Ruolo in Transactionale (Publisher and Advertiser, solo Publisher, solo Advertiser, Disabilitato).
 *Debug*| seleziona No.
 *Auth Key*|utilizzata per identicare il tuo account. **Segui le istruzioni per copiarla qui**.
 *Import leads automatically*|abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
 
-{% include image.html file="magento/webhook.png" url="images/magento/webhook.png" %}
+{% include image.html file="magento/configuration.png" url="images/magento/configuration.png" %}
 
 Dovrai anche completare la configurazione per il singolo store.
 
