@@ -49,7 +49,7 @@ Di seguito i dettagli dei campi visualizzati:
 *Web Touchpoint Text*| se utilizzi il touchpoint web, è possibile specificare il testo da visualizzare sopra le offerte.
 *Opt-in Privacy Link* | link della tua privacy policy.
 
-{% include image.html file="magento/configuration_store.png" url="images/magento/configuration_store.png" %}
+{% include image.html file="magento/magento_setting_2.png" url="images/magento/magento_setting_2.png" %}
 
 ### Ultimi step
 
