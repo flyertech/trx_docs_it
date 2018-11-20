@@ -75,6 +75,7 @@ HTTP STATUS: 201 CREATED
 ```
 
 ## Descrizione della risposta
+
 |Parametri| Descrizione|
 |-------|------|
 |id| (integer) |
@@ -85,7 +86,7 @@ HTTP STATUS: 201 CREATED
 |delivery_status| (string) *delivered*, *failed*, *unknown*|
 |url| (string) URL API di questo SMS|
 |webhook_url| (string) L'URL a cui verranno inviate le notifiche di consegna (webhook)|
-|country| (string) ['AF' or 'AL' or 'AG' or 'AR' or 'AU' or 'AT' or 'BY' or 'BE' or 'BA' or 'BR' or 'BG' or 'KH' or 'CA' or 'CL' or 'CN' or 'CO' or 'HR' or 'CU' or 'CY' or 'CZ' or 'KP' or 'DK' or 'DO' or 'EG' or 'ER' or 'EE' or 'FI' or 'FR' or 'GF' or 'DE' or 'GI' or 'GR' or 'GP' or 'HK' or 'HU' or 'IS' or 'IE' or 'IL' or 'IT' or 'JP' or 'JO' or 'KR' or 'LI' or 'LU' or 'MO' or 'MT' or 'MQ' or 'MC' or 'ME' or 'NA' or 'NL' or 'NZ' or 'NO' or 'PA' or 'PE' or 'PH' or 'PL' or 'PT' or 'RO' or 'RU' or 'SM' or 'SA' or 'RS' or 'SK' or 'SL' or 'ZA' or 'ES' or 'SE' or 'CH' or 'TW' or 'MK' or 'TN' or 'TR' or 'TC' or 'UG' or 'UA' or 'GB' or 'US' or 'UY' or 'VE' or 'YE'|
+|country| (string) 'AF' or 'AL' or 'AG' or 'AR' or 'AU' or 'AT' or 'BY' or 'BE' or 'BA' or 'BR' or 'BG' or 'KH' or 'CA' or 'CL' or 'CN' or 'CO' or 'HR' or 'CU' or 'CY' or 'CZ' or 'KP' or 'DK' or 'DO' or 'EG' or 'ER' or 'EE' or 'FI' or 'FR' or 'GF' or 'DE' or 'GI' or 'GR' or 'GP' or 'HK' or 'HU' or 'IS' or 'IE' or 'IL' or 'IT' or 'JP' or 'JO' or 'KR' or 'LI' or 'LU' or 'MO' or 'MT' or 'MQ' or 'MC' or 'ME' or 'NA' or 'NL' or 'NZ' or 'NO' or 'PA' or 'PE' or 'PH' or 'PL' or 'PT' or 'RO' or 'RU' or 'SM' or 'SA' or 'RS' or 'SK' or 'SL' or 'ZA' or 'ES' or 'SE' or 'CH' or 'TW' or 'MK' or 'TN' or 'TR' or 'TC' or 'UG' or 'UA' or 'GB' or 'US' or 'UY' or 'VE' or 'YE'|
 |is_two_way| (bool) Se questo SMS prevede la possibilità di ricevere risposte (non supportato)|
 
 Esempio di riposta di errore:
