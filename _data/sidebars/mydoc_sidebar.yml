@@ -108,6 +108,14 @@ entries:
       - title: Verifica webhook
         url: /verify_webhook.html
         output: web, pdf
+
+  - title: Invio SMS
+    output: web, pdf
+    folderitems:
+
+      - title: API per invio Sms
+        url: /send_sms.html
+        output: web, pdf
   
   - title: Lingua
     output: web, pdf
