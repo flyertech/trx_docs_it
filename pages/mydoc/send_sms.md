@@ -1,5 +1,5 @@
 ---
-title: Invio Sms
+title: Invio di SMS singoli
 sidebar: mydoc_sidebar
 permalink: send_sms.html
 folder: mydoc
