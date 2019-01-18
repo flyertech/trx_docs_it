@@ -116,6 +116,15 @@ entries:
       - title: API per invio Sms
         url: /send_sms.html
         output: web, pdf
+
+  - title: Banner in email
+    output: web, pdf
+    folderitems:
+
+      - title: Istruzioni
+        url: /banner_email.html
+        output: web, pdf
+  
   
   - title: Lingua
     output: web, pdf
