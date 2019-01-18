@@ -109,11 +109,11 @@ entries:
         url: /verify_webhook.html
         output: web, pdf
 
-  - title: Invio SMS
+  - title: SMS API
     output: web, pdf
     folderitems:
 
-      - title: API per invio Sms
+      - title: SMS Singoli
         url: /send_sms.html
         output: web, pdf
 
