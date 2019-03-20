@@ -37,7 +37,7 @@ Content-Type: application/json
     "sender_id": "MyShop",
     "body": "Hello, world!",
     "webhook_url": "https://www.myshop.com/webhook/sms",
-    "call_webhook": "default"
+    "receive_dlr": "default"
 }
 ```
 Esempio cURL:
