@@ -36,6 +36,7 @@ Verrà effettuata una chiamata POST con codifica ```application/x-www-form-urlen
 |gender|	sesso (“M” o “F”)|
 |phone|	telefono|
 |birth_year|	anno di nascita|
+|country_code|	anno di nascita|
 |coupon_code|	il codice coupon ricevuto dall’utente, facoltativo, utile in caso di campagne multi-coupon|
 |zip_code|	cap dell’utente|
 
