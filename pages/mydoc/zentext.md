@@ -22,10 +22,9 @@ Per tutti gli altri, sarà sufficiente ricaricare eventuali liste nella nuova pi
 Tutti gli account esistenti su ZenText vengono copiati su Transactionale mantenendo l'API KEY per l'eventuale utilizzo delle API.
 E' necessario resettare la password, che non può essere trasferita.
 
-Viene inviata una comunicazione via e-mail per comunicare ai clienti il passaggio.
 In questa fase, non vengono trasferiti eventuali crediti residui. I clienti potranno farlo come descritto in seguito.
 
-**IMPORTANTE** Solo l'account principale verrà trasferito. Transactionale non supporta ancora i multi-account.
+**IMPORTANTE:** Solo l'account principale verrà trasferito. Transactionale non supporta ancora i multi-account.
 
 ### 18 novembre 2019
 
@@ -44,7 +43,7 @@ La piattaforma ZenText viene messa offline.
 All'accesso al nuovo account Transactionale, nella dashboard è presente il pulsante *Transfer credit*.
 Il credito verrà trasferito in automatico e l'account ZenText di fatto reso di sola lettura.
 
-**ATTENZIONE** Questa operazione non è reversibile.
+**ATTENZIONE:** Questa operazione non è reversibile.
 
 ## Migrazione API
 
