@@ -27,13 +27,13 @@ In questa fase, non vengono trasferiti eventuali crediti residui. I clienti potr
 
 **IMPORTANTE** Solo l'account principale verrà trasferito. Transactionale non supporta ancora i multi-account.
 
-## 18 novembre 2019
+### 18 novembre 2019
 
 Verrà trasferito in automatico il credito residuo per tutti gli account che non hanno ancora provveduto.
 Questo impedirà l'ulteriore invio di SMS tramite ZenText, producendo errori nelle eventuali chiamate all'API *send*.
 La piattaforma resterà comunque a disposizione per consultazione.
 
-## 16 dicembre
+### 16 dicembre 2019
 
 La piattaforma ZenText viene messa offline.
 
