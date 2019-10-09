@@ -1,11 +1,9 @@
 ---
-title:  "Migrazione API ZenText/Transactionale"
+title:  "Dismissione della piattaforma ZenText"
 permalink: zentext_migration.html
 sidebar: mydoc_sidebar
 folder: mydoc
 ---
-
-# Dismissione della piattaforma ZenText
 
 ## Introduzione
 
