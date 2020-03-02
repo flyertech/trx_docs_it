@@ -174,3 +174,38 @@ Content-Type: application/json
 |send_time|(string) timestamp in formato Iso 8601 dell'orario di invio|
 |status_time|(string) timestamp in formato Iso 8601 dell'orario del presente cambio di stato|
 |status|(string) stato di consegna delL'SMS: *delivered*, *failed*, *expired*|
+
+# Errori API
+
+## Errore di autenticazione
+
+```js
+HTTP STATUS: 401 Unauthorized
+
+{
+    "message": "401 Unauthorized",
+    "status_code": 401
+}
+```
+
+## Errore di validazione
+
+In caso di errore di validazione del payload, verrà restituito un oggetto JSON con il campo non valido come chiave e al suo interno una lista di messaggi d'errore.
+Esempio:
+
+```js
+HTTP STATUS: 400 Bad Request
+
+{
+    "phone": [
+        "The phone field is required."
+    ],
+    "sender_id": [
+        "The sender id may not be greater than 11 characters."
+    ],
+    "body": [
+        "The body field is required."
+    ]
+}```
+
+
