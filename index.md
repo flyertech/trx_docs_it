@@ -15,10 +15,7 @@ Questa è la **knowledge base tecnica di Transactionale**, dove potrai trovare t
 
 # Cosa devi fare? Istruzioni tecniche
 
-L'integrazione prevede due modalità:
-
-  - [Integrazione completa](full_integration.html), **consigliata** per performance ottimali
-  - [Integrazione semplificata](simplified_integration.html)
+  - [Istruzioni di integrazione](simplified_integration.html)
 
 E' possibile attivare la [modalità di sviluppo](debugging.html) per verificare la correttezza dell'integrazione.
 

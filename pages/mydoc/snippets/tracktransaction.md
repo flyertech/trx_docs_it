@@ -1,43 +1,20 @@
-```js
+```html
+<script>
 window._trx.push(
     {
         event: 'trackTransaction',
         transaction: {
             id: 'xxxxx', // Codice ordine
-            subtotal: xxx.xx,
-            shipping: xxx.xx,
-            discount: xxx.xx,
             total: xxx.xx, // Required
-            coupon: 'xxx', 
-            currency: 'EUR', // EUR by default
-        },
-        items: [
-            {id: x, price: xx.xx, quantity: x}, 
-            {id: x, price: xx.xx, quantity: x},
-        ],
-        address: {
-            address: 'xxxxxx',
-            address2: 'xxxxxx',
-            city: 'xxxxx',
-            postalCode: 'xxxxx',
-            country: 'IT',
-            phone: 'xxxxxxxx',
-            phoneMobile: 'xxxxxxxxx',
-        },
-        customer: {
-            firstName: 'Xxxxx',
-            lastName: 'Xxxxxxx',
-            company: 'xxxxxxxx',
-            email: 'xxxxx@xxxx.xx',
-            birthDate: 'aaaa-mm-gg',
-            gender: 'x', 
-            optin: xxxx // Se l'utente ha dato il consenso per le comunicazioni commerciali
+            currency: 'EUR' // EUR by default
         },
         // Esempio con integrazione annunci direttamente in pagina ordine
         touchpointType: 'auto', 
     }
 );
+</script>
 ```
 ```html
+<!-- Solo per i publisher - Indica il punto in cui mostrare il banner o gli annunci -->
 <div id="tr_touchpoint_container"></div>
 ```
