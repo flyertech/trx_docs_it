@@ -25,6 +25,8 @@ Dovrai riempire tutti i campi disponibili con i valori effettivi relativi all'or
 
 {% include_relative snippets/tracktransaction.md %}
 
+Utilizzando `mail` come `touchpointType`, invieremo una mail contenente le offerte selezionate *solo* se il campo `customer.optin` è impostato a `true`.
+
 ### Selezione automatica touchpoint
 Inserendo `auto` come `touchpointType`, verrà attivato automaticamente il touchpoint di tipo mail o web in base ai valori forniti. Nel caso in cui venga attivato il touchpoint di tipo web e non è stato inserito il touchpointId, il sistema utilizzerà quello di default.
 
