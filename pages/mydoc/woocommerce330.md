@@ -6,56 +6,90 @@ folder: mydoc
 ---
 
 ### Scarica l'ultima versione del plugin Woocommerce
-Puoi scaricare l'ultima versione del plugin Woocommerce dalla sezione **My Account -> Integration -> Select Woocommerce >= 3.3.0**, clicca su **Download the plugin**.
+Puoi scaricare l’ultima versione del plugin Woocommerce dalla sezione **My Account -> Integration -> Select Woocommerce ->** clicca su **Download the plugin**.
 
 {% include image.html file="woocommerce/downloadplugin.png" url="images/woocommerce/downloadplugin.png" %}
 
 ### Installa il modulo
 
-Dalla sezione Plugin  del tuo WooCommerce clicca su **Carica plugin**.
+Per poter installare il plugin di Transactionale, sarà necessario accedere al backend del proprio sito e navigare nella sezione **Plugin**:
 {% include image.html file="woocommerce/1.png" url="images/woocommerce/1.png" %}
 
-Scegli file
+Clicca su **“Aggiungi nuovo”** 
 
-{% include image.html file="woocommerce/2.png" url="images/woocommerce/2.png" %}
+{% include image.html file="woocommerce/02.png" url="images/woocommerce/02.png" %}
 
-ed infine installa ora
+Cliccare su **“Carica Plugin”**
 
-{% include image.html file="woocommerce/3.png" url="images/woocommerce/3.png" %}
+{% include image.html file="woocommerce/03.png" url="images/woocommerce/03.png" %}
 
-Verrai reindirizzato nella sezione Plugin e trovarei Trasactionale.
+Caricare il file zip del plugin, cliccando sul tasto **“Scegli file”**
 
-Se non hai specificato nessuna pagina di Termini e condizioni per il tuo Shop vedrai il link **Woocommerce Checkout Settings**
+{% include image.html file="woocommerce/04.png" url="images/woocommerce/04.png" %}
 
-{% include image.html file="woocommerce/checkoutsettings.png" url="images/woocommerce/checkoutsettings.png" %}
+Successivamente, cliccare su **“Installa adesso”**
 
-In questa pagina dovrai inserire la pagina in cui sono specificati **Termini e Condizioni** del tuo shop
+{% include image.html file="woocommerce/05.png" url="images/woocommerce/05.png" %}
 
-{% include image.html file="woocommerce/termsandconditions.png" url="images/woocommerce/termsandconditions.png" %}
+Dopo l’installazione del plugin, verrà aggiunta una voce alla sidebar, ossia “Transactionale”
 
-Ricorda di salvare le modifiche.
+{% include image.html file="woocommerce/06.png" url="images/woocommerce/06.png" %}
 
-Ritorna nella sezione  **Plugin**
+Dopo l’installazione, si passa alla configurazione del plugin.
 
-clicca su **Settings** relativo al modulo Transactionale
+### Configurazione plugin Wordpress
 
-{% include image.html file="woocommerce/5.png" url="images/woocommerce/5.png" %}
+Di seguito la schermata che si presenterà nel processo di configurazione di Transactionale:
 
-### Dettaglio configurazione
+{% include image.html file="woocommerce/07.png" url="images/woocommerce/07.png" %}
 
-Ti troverai nella pagina di configurazione del modulo
+Analizziamo le singole voci per scegliere la configurazione desiderata: 
 
-Di seguito i dettagli dei campi visualizzati
+---
 
-*Transactionale status*|seleziona Enabled per abilitare il plugin.
-*Auth Key*|utilizzata per identificare il tuo account. **Segui le istruzioni per copiarla qui**.
-*Country code*| le due lettere del codice ISO dove opera il tuo shop.
-*Product Format*|indica il formato del prodotto che intendi inviare (Full o Id only).
-*Touchpoint Type*|come veicoli le offerte ai tuoi clienti. Può essere Mail, Web o Mail+Web
-*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id, altrimenti prenderà un id di default.
-*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il testo da visualizzare sopra le offerte.
+**Transactionale Status**
 
-{% include image.html file="woocommerce/6.png" url="images/woocommerce/6.png" %}
+- **Enable** → Transactionale sarà attivo ed utilizzabile; 
+- **Disabled** → Transactionale verrà disattivato.
+
+---
+
+**Auth Key**
+Codice identificativo fornito da Transactionale
+
+---
+
+**Country Code**
+Il codice ISO di due lettere per il paese in cui opera il tuo negozio (esempio: it. en, etc…)
+
+---
+
+**Show 3rd Party Opt-In checkbox***
+- **Enable** → Abilitando questa funzionalità, viene mostrata la seguente dicitura, in fase di checkout: 
+{% include image.html file="woocommerce/08.png" url="images/woocommerce/08.png" %}
+- <ins>Cosa succede se si spunta la casella per accettazione</ins>: Viene inviata una mail ma non compare il banner;
+- <ins>Cosa succede se non si spunta la casella per accettazione</ins>: Non viene inviata mail ma viene mostrato solo il banner 
+- **Disabled** → Non viene mostrata la dicitura indicata in fase di checkout ed automaticamente non viene inviata mail ma mostrato solo il banner.
+
+*Questa funzionalità è strettamente legata a Wordpress.
+
+---
+
+**Touchpoint Type**
+Dalla tendina si potrà scegliere uno dei seguenti touchpoint, ossia il campo su cui si vuole agire:
+- **Email** → Verrà inviata solo la mail relativa alle offerte riservate; 
+- **Web** → Verrà mostrato solo il banner relativo alle offerte riservate;
+- **Auto (Web + Mail)** → Campo dipendente dalla scelta dell’utente in merito alla 3rd party opt-in checkbox.
+
+Solo selezionando Web e Auto, compaiono due voci extra, strettamente legate al banner, ossia: 
+- **Web Touchpoint Id** → Va inserito l’ID del div che è stato impostato nel template per essere popolato con le informazioni del banner; 
+- **Web Touchpoint Text** → Titolo banner visualizzato, in questo caso “Le offerte a te riservate”.
+{% include image.html file="woocommerce/09.png" url="images/woocommerce/09.png" %}
+
+### Schema riepilogativo
+{% include image.html file="woocommerce/10.png" url="images/woocommerce/10.png" %}
+
+*Solo per Wordpress 
 
 
 ### Ultimi step
@@ -64,12 +98,8 @@ Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-
 
 {% include image.html file="woocommerce/apikey.png" url="images/woocommerce/apikey.png" %}
 
-Dopo aver compilato tutti i campi richiesti clicca su Save.
-
-{% include image.html file="woocommerce/7.png" url="images/woocommerce/7.png" %}
-
-### Verifica integrazione e webhook
+### Verifica integrazione
 
 Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
 
-{% include_relative partials/link_verify.md %}
+{% include_relative partials/link_verify_integration.md %}
