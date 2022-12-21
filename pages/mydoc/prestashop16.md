@@ -36,17 +36,25 @@ Di seguito, la schermata che si presenterà nel processo di configurazione di Tr
 {% include image.html file="prestashop16/05.png" url="images/prestashop16/05.png" %}
 
 Analizziamo le singole voci per scegliere la configurazione desiderata:
+
 ---
+
 **Attivazione/Disattivazione Transactionale**
 Per attivare o disattivare Transactionale, si può disattivare/attivare direttamente il modulo da
 Prestashop.
+
 ---
+
 **Auth Key**
 Codice identificativo fornito da Transactionale (Segui le istruzioni per copiarlo qui)
+
 ---
+
 **Country Code**
 Il codice ISO di due lettere per il paese in cui opera il tuo negozio (esempio: it. en, etc…)
+
 ---
+
 **Touchpoint Type**
 Dalla tendina si potrà scegliere uno dei seguenti touchpoint, ossia il campo su cui si vuole
 agire:
@@ -81,4 +89,4 @@ ed incollala nel campo Auth Key nella pagina di configurazione del modulo Presta
 
 Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
 
-{% include_relative partials/link_verify.md %}
+{% include_relative partials/link_verify_integration.md %}
