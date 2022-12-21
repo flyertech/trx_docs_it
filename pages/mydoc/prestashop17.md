@@ -13,30 +13,69 @@ folder: mydoc
 
 ### Installa il modulo
 
-Nella sezione **Modules and Services** del tuo Prestashop installa il plugin appena scaricato. Al termine dell'installazione clicca su **Configure**
+Per installare Transactionale sul vostro sito Prestashop, sarà necessario loggare nel backend ed accedere alla sezione “**Moduli → Gestisci moduli**”, presente sulla sidebar destra.
 
-{% include image.html file="prestashop17/uploadplugin.png" url="images/prestashop17/uploadplugin.png" %}
+{% include image.html file="prestashop17/01.png" url="images/prestashop17/01.png" %}
 
+Dopo essere entrati nella sezione, in alto a destra ci sarà un pulsante su cui cliccare, ossia “**Carica un modulo**” 
+
+{% include image.html file="prestashop17/02.png" url="images/prestashop17/02.png" %}
+
+Comparirà questa schermata: 
+
+{% include image.html file="prestashop17/03.png" url="images/prestashop17/03.png" %}
+
+A questo punto carichiamo il file zip del nostro modulo:
+
+{% include image.html file="prestashop17/04.png" url="images/prestashop17/04.png" %}
+
+Cliccare su “**Configura**” per passare alla configurazione.
 
 ### Dettaglio configurazione
-Verrai reindirizzato alla pagina di configurazione del modulo
-{% include image.html file="prestashop17/4.png" url="images/prestashop17/4.png" %}
+Di seguito, la schermata che si presenterà nel processo di configurazione di Transactionale:
 
-Di seguito i dettagli dei campi visualizzati
+{% include image.html file="prestashop17/05.png" url="images/prestashop17/05.png" %}
 
-*Auth Key*|utilizzata per identificare il tuo account. **Segui le istruzioni per copiarla qui**.
-*Country*| le due lettere del codice ISO dove opera il tuo shop.
-*Touchpoint Type*|come veicoli le offerte ai tuoi clienti. Può essere Mail, Web o Mail+Web.
-*Web Touchpoint Id*|se utilizzi il touchpoint web, devi specificare un id, altrimenti prenderà un id di default.
-*Web Touchpoint Text*|se utilizzi il touchpoint web, è possibile specificare il testo da visualizzare sopra le offerte.
-*Automatically import leads*|abilita l'importazione automatica dei leads. Se abilitato, copia ed incolla l'URL visualizzato nel tuo account Transactionale su Account personale -> Integrazione -> URL webhook
+Analizziamo le singole voci per scegliere la configurazione desiderata:
 
+---
 
-{% include image.html file="prestashop17/5.png" url="images/prestashop17/5.png" %}
+**Attivazione/Disattivazione Transactionale**
+Per attivare o disattivare Transactionale, si può disattivare/attivare direttamente il modulo da
+Prestashop.
 
-### Abilita/Disabilita Optin
-E' necessario attivare l'opt-in dalla sezione di **Preferences -> Customers**.
-{% include image.html file="prestashop17/optin.png" url="images/prestashop17/optin.png" %}
+---
+
+**Auth Key**
+Codice identificativo fornito da Transactionale (Segui le istruzioni per copiarlo qui)
+
+---
+
+**Country Code**
+Il codice ISO di due lettere per il paese in cui opera il tuo negozio (esempio: it. en, etc…)
+
+---
+
+**Touchpoint Type**
+Dalla tendina si potrà scegliere uno dei seguenti touchpoint, ossia il campo su cui si vuole
+agire:
+- **Email** → Verrà inviata solo la mail relativa alle offerte riservate;
+
+- **Web** → Verrà mostrato solo il banner relativo alle offerte riservate;
+
+- **Auto (Web + Mail)** → Campo dipendente dalla scelta dell’utente in merito alla dicitura “Ricevi offerte dai nostri partner” presente di default su Prestashop.
+
+{% include image.html file="prestashop17/06.png" url="images/prestashop17/06.png" %}
+
+Solo selezionando **Web e Mail + Web**, compaiono due voci extra, strettamente legate al banner, ossia: 
+- **Web Touchpoint Id** → Va inserito l’ID del div che è stato impostato nel template per essere popolato con le informazioni del banner (se utilizzi il touchpoint web, devi specificare un id, altrimenti prenderà un id di default);
+
+- **Web Touchpoint Text** → Titolo banner visualizzato, in questo caso “Ci sono delle offerte per te” .
+
+{% include image.html file="prestashop17/07.png" url="images/prestashop17/07.png" %}
+
+### Schema riepilogativo
+{% include image.html file="prestashop17/08.png" url="images/prestashop17/08.png" %}
 
 ### Ultimi step
 
@@ -44,18 +83,9 @@ Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-
 
 {% include image.html file="prestashop17/apikey.png" url="images/prestashop17/apikey.png" %}
 
-Ricorda di Salvare le modifiche.
-
-### Abilitare l'importazione automatica dei leads - Webhook
-
-Per l'importazione automatica dei leads tramite webhook devi selezionare **YES** nel campo **Import leads automatically**
-
-{% include image.html file="prestashop17/webhook.png" url="images/prestashop17/webhook.png" %}
-
-Incolla il link che ti compare, nella sezione  **My Account-> Integration** del tuo account Transactionale nel campo **Webhook Url**
 
 ### Verifica integrazione e webhook
 
 Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
 
-{% include_relative partials/link_verify.md %}
+{% include_relative partials/link_verify_integration.md %}
