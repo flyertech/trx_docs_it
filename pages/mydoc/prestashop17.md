@@ -84,7 +84,7 @@ Copia la tua Auth Key dal tuo account Transactionale dalla sezione **My Account-
 {% include image.html file="prestashop17/apikey.png" url="images/prestashop17/apikey.png" %}
 
 
-### Verifica integrazione e webhook
+### Verifica integrazione
 
 Puoi verificare il corretto funzionamento dell'integrazione tecnologica e del webhook url tramite queste semplici istruzioni:
 
